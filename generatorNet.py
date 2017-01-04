@@ -1,19 +1,39 @@
 import utilities as utils
 import tensorflow as tf
+import numpy as np
 
 
 class GeneratorNet():
     def __init__(self, sess):
-        #TODO: Implement generator net
-        self.inputContent = tf.placeholder(tf.float32, shape=[None, utils.imageShape[0],utils.imageShape[1],utils.imageShape[2]])
+        with tf.variable_scope("generator"):
+            ###PLACEHOLDERS
+            self.inputContent             = tf.placeholder(tf.float32, shape=[None, utils.imageShape[0],utils.imageShape[1],utils.imageShape[2]])
+            self.currentlyTraining        = tf.placeholder(tf.bool)
+
+            ###DOWNSAMPLING (NON RESIDUAL BLOCKS)
+            #1
+            self.conv1_reflection= utils.convolution(self.inputContent,9,9,3,1,1,'1',True, padding="SAME")
+            self.conv1_reflection_BN = utils.batch_normalization(self.conv1_reflection,self.currentlyTraining)
+            #2
+            self.conv2 =  utils.convolution(self.conv1_reflection_BN,3,3,32,1,1,'2',True, padding="SAME")
+            self.conv2_BN = utils.batch_normalization(self.conv2, self.currentlyTraining)
+            #3
+            self.conv3 = utils.convolution(self.conv2_BN,3,3,32,1,1,'2',True, padding="SAME")
 
 
 
+
+            self.trainableVars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope="generator")
+            sess.run(tf.initialize_all_variables())
+            sess.run(self.reflectionPaddingLayer, feed_dict = {self.inputContent:np.array(utils.loadImage(utils.contentPath, utils.imageShape)), self.currentlyTraining:False})
         ########END OF GENERATOR########
-        self.vgg = utils.vggNet.Vgg19()
-        inputVar = self.imagePred
-        self.vgg.build(inputVar, utils.imageShape)
-        self.trainableVars = []
+        #Should be outside variable scope so don't indent:
+
+        #self.vgg = utils.vggNet.Vgg19()
+        #inputVar = self.imagePred
+        #self.vgg.build(inputVar, utils.imageShape)
+
+
 
     def __initUpdateTensor__(self):
         loss = utils.totalLoss(self.vgg)
