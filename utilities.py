@@ -1,7 +1,137 @@
-import tensorflow as tf
-import numpy as np
+
+##Imports##
 from scipy import misc
 from PIL import Image
+import utilities as utils
+import tensorflow as tf
+from functools import reduce
+import numpy as np
+###########################
+
+##Global Options##
+contentPath        = '../neural_art/images/testingContent.jpg'
+stylePath          = '../neural_art/images/testingArt.jpg'
+contentLayer       = 'conv4_2'
+styleLayers        = ['conv1_1','conv2_1','conv3_1', 'conv4_1', 'conv5_1']
+styleWeights       = [0.2      ,0.2      , 0.2     , 0.2      , 0.2      ]
+styleData          = {}
+styleBalanceData   = {}
+contentData        = None
+errorMetricContent = utils.mse #utils.euclidean
+errorMetricStyle   = utils.mse
+normalizeContent   = True #Inversion paper says to use this
+normalizeStyle     = False #No mention of style in inversion paper
+imageShape         = (int(720/2),int(1280/2),3)
+#TODO : Add a real value for sigma. Should be the average euclidean norm of the vgg training images. This also requires an option for the model to change whether or not sigma is multipled by the input image
+sigma = 1.0 #<- if sigma is one then it doesnt need to be included in the vgg net (because the multiplicative identity)
+beta = 2.0
+alpha = 6.0
+a = 0.01
+B = 120.0 #Pixel min/max encourages pixels to be in the range of [-B, +B]
+
+alphaNormLossWeight = 0.0001
+TVNormLossWeight    = 1.5
+styleLossWeight     = 0.0001
+contentLossWeight   = 0.05
+
+learningRate  = 0.025
+numIters      = 501
+showEveryN   = 500
+##################
+
+
+with tf.Session() as sess:
+    inputTensor = tf.placeholder(tf.float32, shape=[None,imageShape[0], imageShape[1], imageShape[2]])
+    contentImage = np.array(utils.loadImage(contentPath, imageShape))
+    styleImage = utils.loadImage(stylePath, imageShape)
+    styleBalanceImage = utils.loadImage(contentPath, imageShape)
+    model =net.Vgg19()
+    model.build(inputTensor, imageShape)
+    contentData = eval('sess.run(model.' + contentLayer + ',feed_dict={inputTensor:contentImage})')
+    for styleLayer in styleLayers:
+        styleData[styleLayer] = np.array(eval('sess.run(model.' + styleLayer + ',feed_dict={inputTensor:styleImage})'))
+
+
+
+
+
+def buildStyleLoss(model):
+    totalStyleLoss = []
+    for index, styleLayer in enumerate(styleLayers):
+        normalizingConstant = 1
+        if (normalizeStyle):
+            normalizingConstant = (reduce(lambda x, y: x + y, (styleData[styleLayer] ** 2)) ** (0.5))
+
+        styleLayerVar = tf.Variable(styleData[styleLayer])
+        correctGrams  = buildGramMatrix(styleLayerVar)
+        tensorGrams   = buildGramMatrix(eval('model.'+styleLayer))
+        _, dimX, dimY, num_filters = styleLayerVar.get_shape()
+        denominator   =(2*normalizingConstant)*((float(int(dimX))*float(int(dimY)))**2)*(float(int(num_filters))**2)
+        error         = tf.reduce_sum(errorMetricStyle(tensorGrams, correctGrams))
+        totalStyleLoss.append((tf.div(error,denominator)))
+
+
+    #styleLoss = (reduce(lambda x, y: x + y, totalStyleLoss))
+    styleLoss = tf.reduce_sum(totalStyleLoss)
+    return styleLoss
+
+
+def buildGramMatrix(layer):
+    _, dimX, dimY, num_filters = layer.get_shape()
+    vectorized_maps = tf.reshape(layer, [int(dimX) * int(dimY), int(num_filters)])
+
+    if int(dimX) * int(dimY) > int(num_filters):
+        return tf.matmul(vectorized_maps, vectorized_maps, transpose_a=True)
+    else:
+        return tf.matmul(vectorized_maps, vectorized_maps, transpose_b=True)
+
+
+def buildContentLoss(model, correctAnswer=contentData):
+
+    normalizingConstant = 1
+    if(normalizeContent):
+
+        normalizingConstant = np.sum(  (correctAnswer**2))**(0.5)
+
+    print("Normalizing Constant : %g"%(normalizingConstant))
+    contentLoss = (eval('errorMetricContent(model.' + contentLayer + ', correctAnswer)') / normalizingConstant)
+    return tf.reduce_sum(contentLoss)
+
+
+def buildAlphaNorm(model):
+    adjustedImage = model.bgr
+    return tf.reduce_sum(tf.pow(adjustedImage, alpha))
+
+
+
+def buildTVNorm(model):
+    adjustedImage = model.bgr
+
+
+    yPlusOne = tf.slice(adjustedImage, [0,0,1,0], [1,imageShape[0],(imageShape[1]-1),imageShape[2]])
+    xPlusOne = tf.slice(adjustedImage, [0,1,0,0], [1,(imageShape[0]-1),imageShape[1],imageShape[2]])
+
+    inputNoiseYadj = tf.slice(adjustedImage,[0,0,0,0],[1,imageShape[0],(imageShape[1]-1),imageShape[2]])
+    inputNoiseXadj = tf.slice(adjustedImage, [0,0,0,0], [1,(imageShape[0]-1),imageShape[1],imageShape[2]])
+
+
+    lambdaBeta = (sigma**beta) / (imageShape[0]*imageShape[1]*((a*B)**beta))
+    error1 = tf.slice(tf.square(yPlusOne-inputNoiseYadj), [0,0,0,0], [1,(imageShape[0]-1),(imageShape[1]-1), imageShape[2]])
+    error2 = tf.slice(tf.square(xPlusOne-inputNoiseXadj), [0,0,0,0], [1,(imageShape[0]-1),(imageShape[1]-1), imageShape[2]])
+
+    return lambdaBeta*tf.reduce_sum( tf.pow((error1+error2),(beta/2) ))
+
+
+
+def totalLoss(model):
+    errorComponents =[buildStyleLoss(model), buildContentLoss(model), buildTVNorm(model)]
+    LossWeights = [styleLossWeight, contentLossWeight,TVNormLossWeight]
+    loss =[]
+    for error, weights in zip(errorComponents, LossWeights):
+        loss.append(error*weights)
+
+    reducedLoss = reduce(lambda x,y: x+y, loss)
+    return reducedLoss
 
 
 
@@ -26,3 +156,35 @@ def showImage(image, shape):
     img = np.clip(image,0, 1)*255
     img = Image.fromarray((img.reshape(shape)).astype('uint8'), 'RGB')
     img.show()
+
+
+#TODO: Add tensorflow functions for making life easier
+
+def padded_convolution(inputs,shape, paddingX, paddingY):
+    padded_input = tf.pad(inputs, [[0, 0], [2, 2], [1, 1], [0, 0]], "CONSTANT")
+    filter = tf.placeholder(tf.float32, [5, 5, 3, 16])
+    return tf.nn.conv2d(padded_input, filter, strides=[1, 1, 1, 1], padding="VALID")
+
+
+def batch_normalization(inputs, currentlyTraining, decay = 0.999, epsilon = 1e-3):
+    #http://r2rt.com/implementing-batch-normalization-in-tensorflow.html
+    #^Thanks
+    ## inputs.get_shape()[-1] returns the number of filters (we want to normalize each of them)
+    ### When you have more time, make this a recursive function that takes the true average instead of exponential moving avg
+    scale = tf.Variable(tf.ones([inputs.get_shape()[-1]]))
+    beta = tf.Variable(tf.zeros([inputs.get_shape()[-1]]))
+    pop_mean = tf.Variable(tf.zeros([inputs.get_shape()[-1]]), trainable=False)
+    pop_var = tf.Variable(tf.ones([inputs.get_shape()[-1]]), trainable=False)
+
+    if(currentlyTraining):
+        batch_mean, batch_var = tf.nn.moments(inputs,[0])
+        train_mean = tf.assign(pop_mean, pop_mean * decay + batch_mean * (1 - decay))
+        train_var = tf.assign(pop_var, pop_var * decay + batch_var * (1 - decay))
+        with tf.control_dependencies([train_mean, train_var]):
+            #Control dependencies ensures that train_mean, and train_var are up to date
+            #Return the values needed to recursively update the avg batch_mean and avg batch_var
+            return tf.nn.batch_normalization(inputs, batch_mean, batch_var, beta, scale, epsilon)
+    else:
+        return tf.nn.batch_normalization(inputs, pop_mean, pop_var, beta, scale, epsilon)
+
+
