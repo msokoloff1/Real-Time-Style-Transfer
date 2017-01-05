@@ -159,20 +159,13 @@ def totalLoss(model):
 
 
 
-#TODO: Add tensorflow functions for making life easier
 
-def convolution(inputs,filterX, filterY, numFilterOutputs, strideX, strideY,layerNum, isPadded=False, padding="VALID", activation=tf.nn.relu):
-    if(isPadded):
-        inputs = tf.pad(inputs, [[0, 0], [40, 40], [40, 40], [0, 0]], "CONSTANT")
 
-    filterZ = inputs.get_shape()[-1]
 
-    filter = tf.Variable(tf.truncated_normal([filterX, filterY, int(filterZ), numFilterOutputs], stddev=0.01), name = str("filter_"+layerNum))
-    bias = tf.Variable(tf.constant(0.01, shape=[numFilterOutputs]), name=str("bias_"+layerNum))
-    return activation(tf.nn.conv2d(inputs, filter, strides=[1, strideX, strideY, 1], padding=padding)+bias)
 
-#TODO: implement residual Block
-#def residualBlock():
+
+
+
 
 def batch_normalization(inputs, currentlyTraining, decay = 0.999, epsilon = 1e-3):
     #https://gist.github.com/tomokishii/0ce3bdac1588b5cca9fa5fbdf6e1c412
@@ -199,3 +192,33 @@ def train_BN(inputs,pop_mean,pop_var,scale, decay=0.999,epsilon=1e-3):
 
 def test_BN(inputs, pop_mean, pop_var, beta, scale, epsilon=1e-3):
     return tf.nn.batch_normalization(inputs, pop_mean, pop_var, beta, scale, epsilon)
+
+
+def convolution(inputs,filterX, filterY, numFilterOutputs, strideX, strideY,layerNum,currentlyTraining, batchNormalize = True, isPadded=False, padding="VALID", activation=tf.nn.relu):
+    if(isPadded):
+        inputs = tf.pad(inputs, [[0, 0], [40, 40], [40, 40], [0, 0]], "CONSTANT")
+
+    filterZ = inputs.get_shape()[-1]
+
+    filter = tf.Variable(tf.truncated_normal([filterX, filterY, int(filterZ), numFilterOutputs], stddev=0.01), name = str("filter_"+layerNum))
+    if(batchNormalize):
+        return activation(batch_normalization(tf.nn.conv2d(inputs, filter, strides=[1, strideX, strideY, 1], padding=padding), currentlyTraining))
+    else:
+        bias = tf.Variable(tf.constant(0.01, shape=[numFilterOutputs]), name=str("bias_" + layerNum))
+        return activation(tf.nn.conv2d(inputs, filter, strides=[1, strideX, strideY, 1], padding=padding) + bias)
+
+
+
+def residualBlock(input, currentlyTraining, layerNum, batchSize):
+    conv1_BN = convolution(input, 3, 3, 128, 1, 1,layerNum,currentlyTraining, batchNormalize=True, padding="VALID")
+    conv2 = convolution(conv1_BN, 3, 3, 128, 1, 1, layerNum, currentlyTraining, batchNormalize=False, padding="VALID")
+    conv2_BN = batch_normalization(conv2, currentlyTraining)
+    _, yDim, xDim, numChannels = conv2_BN.get_shape()
+
+    cropped = tf.slice(input, [0,1,1,0], [batchSize,int(yDim), int(xDim),int(numChannels)])
+    return cropped + conv2_BN
+
+#def deconvolution():
+
+
+
