@@ -218,7 +218,16 @@ def residualBlock(input, currentlyTraining, layerNum, batchSize):
     cropped = tf.slice(input, [0,1,1,0], [batchSize,int(yDim), int(xDim),int(numChannels)])
     return cropped + conv2_BN
 
-#def deconvolution():
+def deconvolution(inputs, batch_size, outputDimXY,outputDimZ, currentlyTraining):
+    strides = [1, 2, 2, 1]
+    filterZ = int(inputs.get_shape()[-1])
+    w = tf.constant(0.1, shape=[3, 3, outputDimZ, filterZ])
+    h1 = tf.nn.conv2d_transpose(inputs, w, output_shape=[batch_size, outputDimXY,outputDimXY,outputDimZ], strides=strides, padding='SAME')
+    h1.set_shape([None, outputDimXY, outputDimXY, outputDimZ])
+    return  tf.nn.relu(batch_normalization(h1, currentlyTraining))
+
+
+
 
 
 
