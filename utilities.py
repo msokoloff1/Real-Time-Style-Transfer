@@ -17,13 +17,22 @@ def euclidean(preds, correct):
 
 
 
-
 def loadImage(path, imageShape, display=False):
     subjectImage = misc.imresize(misc.imread(path), imageShape) / 255
     if(display):
         showImage(subjectImage, imageShape)
+    print(imageShape)
     reshaped = (1,) + imageShape
-    return subjectImage.reshape(reshaped)
+    try:
+        a=subjectImage.reshape(reshaped)
+        return a
+    except:
+        print("Error!")
+        print(reshaped)
+        print(imageShape)
+        gc.collect()
+        exit(0)
+
 
 
 def showImage(image, shape):

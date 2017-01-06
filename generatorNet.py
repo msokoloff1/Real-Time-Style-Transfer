@@ -72,19 +72,19 @@ class GeneratorNet():
         self.clipped_grads = [(tf.clip_by_value(self.grad, -5.0, 5.0), var) for self.grad, var in self.grads]
         self.updateOp = self.optimizer.apply_gradients(self.clipped_grads)
 
-    def train(self, trainingIters = 20, batchSize = 2):
+    def train(self, trainingIters = 20, batchSize = 4):
         self.sess.run(tf.initialize_all_variables())
         print("HERE")
         
         
         for iteration in range(trainingIters):
             print("HERE" + str(iteration))
-            imageBatch = self.getImages()
+            batch = self.getImages(iteration, (iteration+4))
             if(iteration%10==0):
 
-                print("Iteration : %s | Loss : %s "%(iteration, self.getLoss(np.random.random((batchSize,256,256,3)), batchSize)))
+                print("Iteration : %s | Loss : %s "%(iteration, self.getLoss(batch, batchSize)))
             
-            feedDict = {self.inputContent : np.random.random((batchSize,256,256,3)), self.batchSize: int(batchSize), self.currentlyTraining:True }
+            feedDict = {self.inputContent : batch, self.batchSize: int(batchSize), self.currentlyTraining:True }
             self.sess.run(self.updateOp, feed_dict=feedDict)
         self.sess.close()
         gc.collect()
@@ -97,27 +97,15 @@ class GeneratorNet():
     def getLoss(self, inputBatch, batchSize =4):
         return self.sess.run(self.loss, feed_dict={self.inputContent : inputBatch, self.batchSize: int(batchSize), self.currentlyTraining:False})
 
-    def getImages(self, dir="/home/matt/repositories/neural_art/images", batchSize = 4):
+    def getImages(self,indexStart, indexEnd, dir="/home/matt/repositories/neural_art/images", batchSize = 4):
         filenames = os.listdir(dir)
-        filename_queue = tf.train.string_input_producer(filenames, num_epochs=1)
-        image_reader = tf.WholeFileReader()
-        _, image_file = image_reader.read(filename_queue)
-        #image = tf.image.decode_png(image_file)
-        image = tf.image.decode_jpeg(image_file)
+        batch = []
 
-        image.set_shape((256, 256, 3))
-        # Generate batch
-        num_preprocess_threads = 1
-        min_queue_examples = 256
-        batch = tf.train.shuffle_batch(
-            [image],
-            batch_size=batchSize,
-            num_threads=num_preprocess_threads,
-            capacity=min_queue_examples + 3 * batchSize,
-            min_after_dequeue=min_queue_examples)
-
+        for index in range(indexStart, indexEnd):
+            img = utils.loadImage(dir+"/"+filenames[index], utils.imageShape)
+#            print(img.shape)
+            batch.append(img.reshape(256,256,3))
         return batch
-
 """
     def getBatch(self, images, batch_size=4):
 
