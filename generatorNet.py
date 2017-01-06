@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 import os
 
-
+import gc
 
 class GeneratorNet():
     def __init__(self, sess):
@@ -52,53 +52,74 @@ class GeneratorNet():
             self.output  = utils.convolution(self.deconv2,9,9,3,1,1,'output',self.currentlyTraining,batchNormalize=False,padding='SAME', activation=tf.nn.sigmoid)
             print(self.output.get_shape())
 
-
-
             self.trainableVars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope="generator")
-            #
-            #a = sess.run(self.output, feed_dict = {self.inputContent:np.array(utils.loadImage(utils.contentPath, utils.imageShape)),self.batchSize:int(1),  self.currentlyTraining:False})
+
+
+        #Different loss depending on the input
+        self.vggContentLoss = utils.vggNet.Vgg19()
+        self.vggContentLoss.build(self.inputContent, utils.imageShape)
+
+        #
 
         self.vgg = utils.vggNet.Vgg19()
         inputVar = self.output
         self.vgg.build(inputVar, utils.imageShape)
 
-        self.loss = utils.totalLoss(self.vgg)
+        self.loss = utils.totalLoss(self.vgg, self.vggContentLoss)
+
         self.optimizer = tf.train.AdamOptimizer(utils.learningRate)
         self.grads = self.optimizer.compute_gradients(self.loss, self.trainableVars)
         self.clipped_grads = [(tf.clip_by_value(self.grad, -5.0, 5.0), var) for self.grad, var in self.grads]
         self.updateOp = self.optimizer.apply_gradients(self.clipped_grads)
 
-    def train(self, inputImages, trainingIters = 40000, batchSize = 4):
-        a = {self.updateOp:1}
-        #for batchIndex in range(40000):
-            #imageBatch =
-            #feedDict = {self.inputContent : imageBatch}
+    def train(self, trainingIters = 2, batchSize = 4):
+        self.sess.run(tf.initialize_all_variables())
+        print("HERE")
+        for iteration in range(trainingIters):
+            print("HERE" + str(iteration))
+            imageBatch = self.getImages()
+            if(iteration%10==0):
 
-            #feedDict = {self.inputContent :np.array(utils.loadImage(utils.contentPath, utils.imageShape)),self.batchSize:int(1),  self.currentlyTraining:False})
-            #self.sess.run(self.updateOp, feed_dict=feedDict)
+                print("Iteration : %s | Loss : %s "%(iteration, self.getLoss(imageBatch, batchSize)))
+
+            feedDict = {self.inputContent : imageBatch.eval(), self.batchSize: int(batchSize), self.currentlyTraining:True }
+            self.sess.run(self.updateOp, feed_dict=feedDict)
 
         #save_path = saver.save(sess, "/tmp/model.ckpt")
 
     def addStyle(self, inputImage):
         image = self.sess.run(self.output, feed_dict={})
 
-    def getLoss(self, inputBatch):
-        currentLoss = self.sess.run(self.loss, feed_dict={})
+    def getLoss(self, inputBatch, batchSize =4):
+        currentLoss = self.sess.run(self.loss, feed_dict={self.inputContent : inputBatch.eval(), self.batchSize: int(batchSize), self.currentlyTraining:False})
 
-    def getImages(self, dir="/Users/matthewsokoloff/Desktop/alejandros crap"):
+    def getImages(self, dir="/Users/matthewsokoloff/Desktop/alejandros crap", batchSize = 4):
         filenames = os.listdir(dir)
         filename_queue = tf.train.string_input_producer(filenames, num_epochs=1)
-        reader = tf.WholeFileReader()
-        key, value = reader.read(filename_queue)
-        images = tf.image.decode_png(value)
+        image_reader = tf.WholeFileReader()
+        _, image_file = image_reader.read(filename_queue)
+        #image = tf.image.decode_png(image_file)
+        image = tf.image.decode_jpeg(image_file)
 
-        resized = tf.image.resize_images(images, 256, 256, 1)
-        resized.set_shape([256, 256, 3])
-        print(resized.get_shape())
-        print(resized)
-        self.sess.run(tf.initialize_all_variables())
+        image.set_shape((256, 256, 3))
+        # Generate batch
+        num_preprocess_threads = 1
+        min_queue_examples = 256
+        batch = tf.train.shuffle_batch(
+            [image],
+            batch_size=batchSize,
+            num_threads=num_preprocess_threads,
+            capacity=min_queue_examples + 3 * batchSize,
+            min_after_dequeue=min_queue_examples)
+
+        return batch
+
+"""
+    def getBatch(self, images, batch_size=4):
 
 
+    return batch
+"""
 
 """
 def train(model, inputVar, sess):
@@ -122,8 +143,10 @@ def train(model, inputVar, sess):
 #Call in runner:
 with tf.Session() as sess:
     generator = GeneratorNet(sess)
-    generator.getImages()
+    generator.train()
     saver = tf.train.Saver()
+
+    gc.collect()
 
 
 

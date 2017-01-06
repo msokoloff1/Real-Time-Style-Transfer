@@ -62,7 +62,7 @@ numIters      = 501
 showEveryN   = 500
 ##################
 
-"""
+
 with tf.Session() as sess:
     inputTensor = tf.placeholder(tf.float32, shape=[None,imageShape[0], imageShape[1], imageShape[2]])
     contentImage = np.array(utils.loadImage(contentPath, imageShape))
@@ -74,7 +74,7 @@ with tf.Session() as sess:
     for styleLayer in styleLayers:
         styleData[styleLayer] = np.array(eval('sess.run(model.' + styleLayer + ',feed_dict={inputTensor:styleImage})'))
 
-"""
+
 
 
 
@@ -146,8 +146,8 @@ def buildTVNorm(model):
 
 
 
-def totalLoss(model):
-    errorComponents =[buildStyleLoss(model), buildContentLoss(model), buildTVNorm(model)]
+def totalLoss(model, contentModel):
+    errorComponents =[buildStyleLoss(model), buildContentLoss(contentModel), buildTVNorm(model)]
     LossWeights = [styleLossWeight, contentLossWeight,TVNormLossWeight]
     loss =[]
     for error, weights in zip(errorComponents, LossWeights):
