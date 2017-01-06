@@ -72,28 +72,32 @@ class GeneratorNet():
         self.clipped_grads = [(tf.clip_by_value(self.grad, -5.0, 5.0), var) for self.grad, var in self.grads]
         self.updateOp = self.optimizer.apply_gradients(self.clipped_grads)
 
-    def train(self, trainingIters = 2, batchSize = 4):
+    def train(self, trainingIters = 20, batchSize = 2):
         self.sess.run(tf.initialize_all_variables())
         print("HERE")
+        
+        
         for iteration in range(trainingIters):
             print("HERE" + str(iteration))
             imageBatch = self.getImages()
             if(iteration%10==0):
 
-                print("Iteration : %s | Loss : %s "%(iteration, self.getLoss(imageBatch, batchSize)))
-
-            feedDict = {self.inputContent : imageBatch.eval(), self.batchSize: int(batchSize), self.currentlyTraining:True }
+                print("Iteration : %s | Loss : %s "%(iteration, self.getLoss(np.random.random((batchSize,256,256,3)), batchSize)))
+            
+            feedDict = {self.inputContent : np.random.random((batchSize,256,256,3)), self.batchSize: int(batchSize), self.currentlyTraining:True }
             self.sess.run(self.updateOp, feed_dict=feedDict)
-
+        self.sess.close()
+        gc.collect()
+        exit()
         #save_path = saver.save(sess, "/tmp/model.ckpt")
 
     def addStyle(self, inputImage):
         image = self.sess.run(self.output, feed_dict={})
 
     def getLoss(self, inputBatch, batchSize =4):
-        currentLoss = self.sess.run(self.loss, feed_dict={self.inputContent : inputBatch.eval(), self.batchSize: int(batchSize), self.currentlyTraining:False})
+        return self.sess.run(self.loss, feed_dict={self.inputContent : inputBatch, self.batchSize: int(batchSize), self.currentlyTraining:False})
 
-    def getImages(self, dir="/Users/matthewsokoloff/Desktop/alejandros crap", batchSize = 4):
+    def getImages(self, dir="/home/matt/repositories/neural_art/images", batchSize = 4):
         filenames = os.listdir(dir)
         filename_queue = tf.train.string_input_producer(filenames, num_epochs=1)
         image_reader = tf.WholeFileReader()

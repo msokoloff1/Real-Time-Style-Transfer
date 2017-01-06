@@ -99,14 +99,27 @@ def buildStyleLoss(model):
     return styleLoss
 
 
-def buildGramMatrix(layer):
-    _, dimX, dimY, num_filters = layer.get_shape()
-    vectorized_maps = tf.reshape(layer, [int(dimX) * int(dimY), int(num_filters)])
+#def buildGramMatrix(layer):
+#    _, dimX, dimY, num_filters = layer.get_shape()
+#    vectorized_maps = tf.reshape(layer, [int(dimX) * int(dimY), int(num_filters)])
 
-    if int(dimX) * int(dimY) > int(num_filters):
-        return tf.matmul(vectorized_maps, vectorized_maps, transpose_a=True)
+#    if int(dimX) * int(dimY) > int(num_filters):
+#        return tf.matmul(vectorized_maps, vectorized_maps, transpose_a=True)
+#    else:
+#        return tf.matmul(vectorized_maps, vectorized_maps, transpose_b=True)
+
+
+def buildGramMatrix(v):
+
+    dim1 = v.get_shape().as_list()
+    v = tf.reshape(v, [-1,dim1[1]*dim1[2],dim1[3]])
+    dim = v.get_shape().as_list()
+
+    if dim1[1] * dim1[2] > dim1[3]:
+        return tf.batch_matmul(tf.reshape(v,[-1, dim[2],dim[1]]),v)
     else:
-        return tf.matmul(vectorized_maps, vectorized_maps, transpose_b=True)
+        return tf.batch_matmul(v,tf.reshape(v,[-1, dim[2], dim[1]]))
+
 
 
 def buildContentLoss(model, correctAnswer=contentData):
