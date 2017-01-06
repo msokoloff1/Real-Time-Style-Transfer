@@ -64,9 +64,9 @@ class GeneratorNet():
         self.vgg = utils.vggNet.Vgg19()
         inputVar = self.output
         self.vgg.build(inputVar, utils.imageShape)
-
+        self.dir="/home/matt/repositories/coco/train2014"
         self.loss = utils.totalLoss(self.vgg, self.vggContentLoss)
-
+        self.filenames = os.listdir(self.dir)
         self.optimizer = tf.train.AdamOptimizer(utils.learningRate)
         self.grads = self.optimizer.compute_gradients(self.loss, self.trainableVars)
         self.clipped_grads = [(tf.clip_by_value(self.grad, -5.0, 5.0), var) for self.grad, var in self.grads]
@@ -77,32 +77,31 @@ class GeneratorNet():
         print("HERE")
         
         
-        for iteration in range(trainingIters):
-            print("HERE" + str(iteration))
-            batch = self.getImages(iteration, (iteration+4))
+        for iteration in range(0,trainingIters,batchSize):
+            batch = self.getImages(iteration, (iteration+batchSize))
             if(iteration%10==0):
 
                 print("Iteration : %s | Loss : %s "%(iteration, self.getLoss(batch, batchSize)))
             
             feedDict = {self.inputContent : batch, self.batchSize: int(batchSize), self.currentlyTraining:True }
             self.sess.run(self.updateOp, feed_dict=feedDict)
-        self.sess.close()
-        gc.collect()
-        exit()
+        
         #save_path = saver.save(sess, "/tmp/model.ckpt")
 
-    def addStyle(self, inputImage):
-        image = self.sess.run(self.output, feed_dict={})
+    def addStyle(self):
+        img = utils.loadImage(utils.contentPath, utils.imageShape)
+        feedDict = {self.inputContent : img, self.batchSize: int(1), self.currentlyTraining:False }        
+        image = self.sess.run(self.output, feed_dict=feedDict)
+        utils.showImage(image, utils.imageShape)
 
     def getLoss(self, inputBatch, batchSize =4):
         return self.sess.run(self.loss, feed_dict={self.inputContent : inputBatch, self.batchSize: int(batchSize), self.currentlyTraining:False})
 
-    def getImages(self,indexStart, indexEnd, dir="/home/matt/repositories/neural_art/images", batchSize = 4):
-        filenames = os.listdir(dir)
+    def getImages(self,indexStart, indexEnd, batchSize = 4):
         batch = []
 
         for index in range(indexStart, indexEnd):
-            img = utils.loadImage(dir+"/"+filenames[index], utils.imageShape)
+            img = utils.loadImage(self.dir+"/"+self.filenames[index], utils.imageShape)
 #            print(img.shape)
             batch.append(img.reshape(256,256,3))
         return batch
@@ -131,14 +130,14 @@ def train(model, inputVar, sess):
     elapsed = time.time() -start_time
     print("Experiment Took : %s"%(str(elapsed)))
 """
-
 #Call in runner:
 with tf.Session() as sess:
     generator = GeneratorNet(sess)
-    generator.train()
+    generator.train(trainingIters=20000)
     saver = tf.train.Saver()
-
-    gc.collect()
-
+    save_path = saver.save(sess, "./model.ckpt")
+    print("Model saved in file: %s" % save_path)
+    saver.restore(sess, "./model.ckpt")
+    generator.addStyle()
 
 

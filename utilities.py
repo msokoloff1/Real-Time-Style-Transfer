@@ -21,7 +21,6 @@ def loadImage(path, imageShape, display=False):
     subjectImage = misc.imresize(misc.imread(path), imageShape) / 255
     if(display):
         showImage(subjectImage, imageShape)
-    print(imageShape)
     reshaped = (1,) + imageShape
     try:
         a=subjectImage.reshape(reshaped)
@@ -30,7 +29,7 @@ def loadImage(path, imageShape, display=False):
         print("Error!")
         print(reshaped)
         print(imageShape)
-        gc.collect()
+        print(subjectImage.shape)
         exit(0)
 
 
