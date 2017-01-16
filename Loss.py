@@ -28,7 +28,7 @@ class Loss():
         self.errorMetricContent = utils.mse #utils.euclidean
         self.errorMetricStyle   = utils.mse
         self.normalizeContent   = True #Inversion paper says to use this
-        self.normalizeStyle     = True #No mention of style in inversion paper
+        self.normalizeStyle     = False #No mention of style in inversion paper
         self.sigma = 1.0
         self.beta = 2.0
         self.alpha = 6.0

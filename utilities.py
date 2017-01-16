@@ -23,7 +23,7 @@ def loadImage(path, imageShape, display=False):
         return reshaped2
     except:
         print("ERROR")
-        return np.array(loadImage('../neural_art/images/testingContent1.jpg', imageShape)) 
+        return np.array(loadImage('./images/testingContent1.jpg', imageShape)) 
 
 
 def showImage(image, shape, name):
@@ -31,7 +31,7 @@ def showImage(image, shape, name):
         img = np.clip(image,0, 1) * 255
         img = Image.fromarray((img.reshape(shape)).astype('uint8'), 'RGB')
         img.show()
-        img.save("./images/"+name+".jpg", "JPEG")
+        img.save("./results/"+name+".jpg", "JPEG")
     except:
         print("Unable to display")
 

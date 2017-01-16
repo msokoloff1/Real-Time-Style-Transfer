@@ -1,0 +1,2700 @@
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcurand.so locally
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:01:00.0
+Total memory: 11.90GiB
+Free memory: 11.75GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+WARNING:tensorflow:From /home/matt/repositories/real_time_style_transfer/Train.py:49 in __train__.: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 1610 get requests, put_count=1582 evicted_count=1000 eviction_rate=0.632111 and unsatisfied allocation rate=0.700621
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 3973 get requests, put_count=3986 evicted_count=1000 eviction_rate=0.250878 and unsatisfied allocation rate=0.254216
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 256 to 281
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+/home/matt/repositories/real_time_style_transfer/./savedNets/vgg19.npy
+npy file loaded
+build model started
+build model finished: 0s
+/home/matt/repositories/real_time_style_transfer/./savedNets/vgg19.npy
+npy file loaded
+Creating Generator Network
+generator/Variable:0
+generator/biases:0
+generator/Variable_1:0
+generator/biases_1:0
+generator/Variable_2:0
+generator/biases_2:0
+generator/res1_4/Variable:0
+generator/res1_4/biases:0
+generator/res1_4/Variable_1:0
+generator/res1_4/biases_1:0
+generator/res2_5/Variable:0
+generator/res2_5/biases:0
+generator/res2_5/Variable_1:0
+generator/res2_5/biases_1:0
+generator/res3_6/Variable:0
+generator/res3_6/biases:0
+generator/res3_6/Variable_1:0
+generator/res3_6/biases_1:0
+generator/res4_7/Variable:0
+generator/res4_7/biases:0
+generator/res4_7/Variable_1:0
+generator/res4_7/biases_1:0
+generator/res5_8/Variable:0
+generator/res5_8/biases:0
+generator/res5_8/Variable_1:0
+generator/res5_8/biases_1:0
+generator/deconv1_9/Variable:0
+generator/deconv1_9/biases:0
+generator/deconv2_10/Variable:0
+generator/deconv2_10/biases:0
+generator/Variable_3:0
+generator/biases_3:0
+Generator Network Initialized
+build model started
+build model finished: 0s
+/home/matt/repositories/real_time_style_transfer/./savedNets/vgg19.npy
+npy file loaded
+build model started
+build model finished: 0s
+No model available for restoration
+Style Normalizing Constant for Layer 0 : 1190792.90892
+Style Normalizing Constant for Layer 1 : 683067.295777
+Style Normalizing Constant for Layer 2 : 674418.33503
+Style Normalizing Constant for Layer 3 : 681949.236351
+Style Normalizing Constant for Layer 4 : 25317.3218173
+Content Normalizing Constant : 735556
+Iteration : 0000 | Loss : 8203.91
+Iteration : 0010 | Loss : 7279.35
+Iteration : 0020 | Loss : 6858.86
+Iteration : 0030 | Loss : 7095.66
+Iteration : 0040 | Loss : 6885.49
+Iteration : 0050 | Loss : 8032.19
+Iteration : 0060 | Loss : 9625.31
+Iteration : 0070 | Loss : 7365.79
+Iteration : 0080 | Loss : 6610.92
+Iteration : 0090 | Loss : 8331.88
+Iteration : 0100 | Loss : 7403.45
+Iteration : 0110 | Loss : 6173.19
+Iteration : 0120 | Loss : 4715.98
+Iteration : 0130 | Loss : 4675.36
+Iteration : 0140 | Loss : 5027.02
+Iteration : 0150 | Loss : 4629.88
+Iteration : 0160 | Loss : 4939.26
+Iteration : 0170 | Loss : 5190.29
+Iteration : 0180 | Loss : 6099.89
+Iteration : 0190 | Loss : 4879.76
+Iteration : 0200 | Loss : 6045.3
+Iteration : 0210 | Loss : 4910
+Iteration : 0220 | Loss : 4187.63
+Iteration : 0230 | Loss : 5610.49
+Iteration : 0240 | Loss : 4459.69
+Iteration : 0250 | Loss : 3633.43
+Iteration : 0260 | Loss : 5036.11
+Iteration : 0270 | Loss : 5376.15
+Iteration : 0280 | Loss : 5492.83
+Iteration : 0290 | Loss : 5592.38
+Iteration : 0300 | Loss : 5289.41
+Iteration : 0310 | Loss : 4046.54
+Iteration : 0320 | Loss : 5455.24
+Iteration : 0330 | Loss : 4896.92
+Iteration : 0340 | Loss : 4558.8
+Iteration : 0350 | Loss : 3716.55
+Iteration : 0360 | Loss : 5251.73
+Iteration : 0370 | Loss : 7819.04
+Iteration : 0380 | Loss : 4040.76
+Iteration : 0390 | Loss : 5291.2
+Iteration : 0400 | Loss : 5125.3
+Iteration : 0410 | Loss : 3509.41
+Iteration : 0420 | Loss : 4229.55
+Iteration : 0430 | Loss : 5158.46
+Iteration : 0440 | Loss : 6991.78
+Iteration : 0450 | Loss : 4543.37
+Iteration : 0460 | Loss : 4489.21
+Iteration : 0470 | Loss : 3899.35
+Iteration : 0480 | Loss : 4693.05
+Iteration : 0490 | Loss : 5508.04
+Iteration : 0500 | Loss : 4034.41
+Iteration : 0510 | Loss : 3941.01
+Iteration : 0520 | Loss : 4404.56
+Iteration : 0530 | Loss : 3867.28
+Iteration : 0540 | Loss : 3658.36
+Iteration : 0550 | Loss : 3895.73
+Iteration : 0560 | Loss : 4945.3
+Iteration : 0570 | Loss : 3224.11
+Iteration : 0580 | Loss : 4445.15
+Iteration : 0590 | Loss : 5239.58
+Iteration : 0600 | Loss : 3774.32
+Iteration : 0610 | Loss : 4414.88
+Iteration : 0620 | Loss : 3589.96
+Iteration : 0630 | Loss : 4149.55
+Iteration : 0640 | Loss : 5638.61
+Iteration : 0650 | Loss : 2672.11
+Iteration : 0660 | Loss : 4333.08
+Iteration : 0670 | Loss : 5321.99
+Iteration : 0680 | Loss : 3699.04
+ERROR
+Iteration : 0690 | Loss : 5161.46
+Iteration : 0700 | Loss : 4308.31
+Iteration : 0710 | Loss : 3628.31
+Iteration : 0720 | Loss : 2676.78
+Iteration : 0730 | Loss : 4921.15
+Iteration : 0740 | Loss : 4280.84
+Iteration : 0750 | Loss : 3133.31
+Iteration : 0760 | Loss : 3682.8
+Iteration : 0770 | Loss : 3799.97
+Iteration : 0780 | Loss : 3225.94
+Iteration : 0790 | Loss : 3238.26
+Iteration : 0800 | Loss : 3416.81
+Iteration : 0810 | Loss : 2587.48
+Iteration : 0820 | Loss : 3645.65
+Iteration : 0830 | Loss : 4508.76
+Iteration : 0840 | Loss : 4292.36
+Iteration : 0850 | Loss : 4345.59
+Iteration : 0860 | Loss : 3254.49
+Iteration : 0870 | Loss : 3480.48
+Iteration : 0880 | Loss : 4308.07
+Iteration : 0890 | Loss : 4235.46
+Iteration : 0900 | Loss : 3052.33
+Iteration : 0910 | Loss : 4483.34
+Iteration : 0920 | Loss : 4042.76
+Iteration : 0930 | Loss : 3728.02
+Iteration : 0940 | Loss : 4107.56
+Iteration : 0950 | Loss : 3290.32
+Iteration : 0960 | Loss : 4555.51
+Iteration : 0970 | Loss : 3396.43
+Iteration : 0980 | Loss : 3031.29
+Iteration : 0990 | Loss : 4708.42
+Iteration : 1000 | Loss : 3168.88
+Iteration : 1010 | Loss : 2886.76
+Iteration : 1020 | Loss : 2889.3
+Iteration : 1030 | Loss : 3910.06
+Iteration : 1040 | Loss : 3592.05
+Iteration : 1050 | Loss : 4457
+Iteration : 1060 | Loss : 3569.74
+Iteration : 1070 | Loss : 3449.51
+Iteration : 1080 | Loss : 4213.87
+Iteration : 1090 | Loss : 3471.24
+Iteration : 1100 | Loss : 4213.01
+Iteration : 1110 | Loss : 3433.24
+Iteration : 1120 | Loss : 4057.47
+Iteration : 1130 | Loss : 3376.05
+Iteration : 1140 | Loss : 2687.87
+Iteration : 1150 | Loss : 3053.28
+Iteration : 1160 | Loss : 2515.01
+Iteration : 1170 | Loss : 3931.93
+Iteration : 1180 | Loss : 2521.72
+Iteration : 1190 | Loss : 3879.61
+Iteration : 1200 | Loss : 3056.61
+Iteration : 1210 | Loss : 3201.85
+Iteration : 1220 | Loss : 3449.05
+Iteration : 1230 | Loss : 3111.17
+Iteration : 1240 | Loss : 3366.16
+Iteration : 1250 | Loss : 2964.73
+Iteration : 1260 | Loss : 3010.82
+Iteration : 1270 | Loss : 3604.29
+Iteration : 1280 | Loss : 3524.04
+Iteration : 1290 | Loss : 2966.48
+Iteration : 1300 | Loss : 3371.62
+Iteration : 1310 | Loss : 3881.94
+Iteration : 1320 | Loss : 3591.78
+Iteration : 1330 | Loss : 2424.27
+Iteration : 1340 | Loss : 3565.18
+Iteration : 1350 | Loss : 2961.59
+Iteration : 1360 | Loss : 3741.29
+Iteration : 1370 | Loss : 2242.7
+Iteration : 1380 | Loss : 3853.02
+Iteration : 1390 | Loss : 4102.54
+Iteration : 1400 | Loss : 3445.31
+Iteration : 1410 | Loss : 4110.52
+Iteration : 1420 | Loss : 2943.99
+Iteration : 1430 | Loss : 4418.71
+Iteration : 1440 | Loss : 2747.01
+Iteration : 1450 | Loss : 3453.85
+Iteration : 1460 | Loss : 3051.88
+Iteration : 1470 | Loss : 3975.11
+Iteration : 1480 | Loss : 4519.84
+Iteration : 1490 | Loss : 3295
+Iteration : 1500 | Loss : 2664.08
+Iteration : 1510 | Loss : 2554.4
+Iteration : 1520 | Loss : 3136.57
+Iteration : 1530 | Loss : 4204.35
+Iteration : 1540 | Loss : 3960.5
+Iteration : 1550 | Loss : 2609.42
+Iteration : 1560 | Loss : 2401.99
+Iteration : 1570 | Loss : 2803.2
+Iteration : 1580 | Loss : 3381.07
+Iteration : 1590 | Loss : 3684.07
+Iteration : 1600 | Loss : 3101.62
+Iteration : 1610 | Loss : 4083.3
+Iteration : 1620 | Loss : 3031.69
+Iteration : 1630 | Loss : 2906.72
+Iteration : 1640 | Loss : 3736.99
+Iteration : 1650 | Loss : 2898.42
+Iteration : 1660 | Loss : 3311.31
+Iteration : 1670 | Loss : 2692.34
+Iteration : 1680 | Loss : 3449.68
+Iteration : 1690 | Loss : 3097.6
+Iteration : 1700 | Loss : 3701.6
+Iteration : 1710 | Loss : 2599.75
+Iteration : 1720 | Loss : 3477.95
+Iteration : 1730 | Loss : 2765.55
+Iteration : 1740 | Loss : 4397.22
+Iteration : 1750 | Loss : 2912.31
+Iteration : 1760 | Loss : 4311.84
+Iteration : 1770 | Loss : 3860.52
+Iteration : 1780 | Loss : 3251.16
+Iteration : 1790 | Loss : 2682.37
+Iteration : 1800 | Loss : 4213.15
+Iteration : 1810 | Loss : 2532.17
+Iteration : 1820 | Loss : 4405.86
+Iteration : 1830 | Loss : 3228.39
+Iteration : 1840 | Loss : 3168.74
+Iteration : 1850 | Loss : 2391.12
+Iteration : 1860 | Loss : 3483.5
+Iteration : 1870 | Loss : 3580.47
+Iteration : 1880 | Loss : 3628.74
+Iteration : 1890 | Loss : 3724.22
+Iteration : 1900 | Loss : 4658.37
+Iteration : 1910 | Loss : 3372.6
+Iteration : 1920 | Loss : 3410.33display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+
+Iteration : 1930 | Loss : 4252.65
+Iteration : 1940 | Loss : 4088.68
+Iteration : 1950 | Loss : 3865.49
+Iteration : 1960 | Loss : 2875.4
+Iteration : 1970 | Loss : 3587.28
+Iteration : 1980 | Loss : 2994.78
+Iteration : 1990 | Loss : 3786.78
+Iteration : 2000 | Loss : 4033.97
+Iteration : 2010 | Loss : 3318.54
+Iteration : 2020 | Loss : 3169.58
+Iteration : 2030 | Loss : 2656.99
+Iteration : 2040 | Loss : 3157.7
+Iteration : 2050 | Loss : 3393.03
+Iteration : 2060 | Loss : 2632.13
+Iteration : 2070 | Loss : 3238.42
+Iteration : 2080 | Loss : 2483.33
+Iteration : 2090 | Loss : 2481.6
+Iteration : 2100 | Loss : 2458.34
+Iteration : 2110 | Loss : 3881.09
+Iteration : 2120 | Loss : 3221.36
+Iteration : 2130 | Loss : 3923.92
+Iteration : 2140 | Loss : 2198.9
+Iteration : 2150 | Loss : 5295.26
+Iteration : 2160 | Loss : 3021.73
+Iteration : 2170 | Loss : 3007.46
+ERROR
+Iteration : 2180 | Loss : 3847.66
+Iteration : 2190 | Loss : 2542.42
+Iteration : 2200 | Loss : 3244.21
+Iteration : 2210 | Loss : 3507.07
+Iteration : 2220 | Loss : 2870.47
+Iteration : 2230 | Loss : 3303.9
+Iteration : 2240 | Loss : 4040.74
+Iteration : 2250 | Loss : 2724.42
+Iteration : 2260 | Loss : 5361.71
+Iteration : 2270 | Loss : 3105.17
+Iteration : 2280 | Loss : 3111.95
+Iteration : 2290 | Loss : 3481.27
+Iteration : 2300 | Loss : 2899.05
+Iteration : 2310 | Loss : 3616.36
+Iteration : 2320 | Loss : 3274.98
+Iteration : 2330 | Loss : 3398.55
+Iteration : 2340 | Loss : 2798.01
+Iteration : 2350 | Loss : 3214.23
+Iteration : 2360 | Loss : 2174.42
+Iteration : 2370 | Loss : 3154.13
+Iteration : 2380 | Loss : 3358.54
+Iteration : 2390 | Loss : 3257.45
+Iteration : 2400 | Loss : 2985.99
+Iteration : 2410 | Loss : 3089.84
+Iteration : 2420 | Loss : 2491.72
+Iteration : 2430 | Loss : 2194.9
+Iteration : 2440 | Loss : 3593.96
+Iteration : 2450 | Loss : 2218.83
+Iteration : 2460 | Loss : 3466.05
+Iteration : 2470 | Loss : 2783.35
+Iteration : 2480 | Loss : 3359.2
+Iteration : 2490 | Loss : 3926.67
+Iteration : 2500 | Loss : 3824.72
+Iteration : 2510 | Loss : 2929.18
+Iteration : 2520 | Loss : 5297.77
+Iteration : 2530 | Loss : 2772.96
+Iteration : 2540 | Loss : 2278.47
+Iteration : 2550 | Loss : 3048.3
+Iteration : 2560 | Loss : 4489.27
+Iteration : 2570 | Loss : 3731.99
+Iteration : 2580 | Loss : 3271.27
+Iteration : 2590 | Loss : 2523.95
+Iteration : 2600 | Loss : 2207.99
+ERROR
+Iteration : 2610 | Loss : 3334.96
+Iteration : 2620 | Loss : 3084.46
+Iteration : 2630 | Loss : 3703.82
+Iteration : 2640 | Loss : 2367.48
+Iteration : 2650 | Loss : 2818
+Iteration : 2660 | Loss : 2857.36
+Iteration : 2670 | Loss : 2645.85
+Iteration : 2680 | Loss : 2739.34
+Iteration : 2690 | Loss : 2501.99
+Iteration : 2700 | Loss : 9143.05
+Iteration : 2710 | Loss : 2429.23
+Iteration : 2720 | Loss : 3333.5
+Iteration : 2730 | Loss : 2671.94
+Iteration : 2740 | Loss : 3864.07
+Iteration : 2750 | Loss : 2589.92
+Iteration : 2760 | Loss : 3219.67
+Iteration : 2770 | Loss : 2733.96
+Iteration : 2780 | Loss : 2231.72
+Iteration : 2790 | Loss : 2664.45
+Iteration : 2800 | Loss : 5043.76
+Iteration : 2810 | Loss : 2865.99
+Iteration : 2820 | Loss : 2639.93
+Iteration : 2830 | Loss : 3930.46
+Iteration : 2840 | Loss : 2608.42
+Iteration : 2850 | Loss : 3271.42
+Iteration : 2860 | Loss : 2493.53
+Iteration : 2870 | Loss : 3119.46
+Iteration : 2880 | Loss : 2401.61
+Iteration : 2890 | Loss : 2669.66
+Iteration : 2900 | Loss : 2399.76
+Iteration : 2910 | Loss : 2380.95
+Iteration : 2920 | Loss : 2926.36
+Iteration : 2930 | Loss : 2391.06
+Iteration : 2940 | Loss : 2988.32
+Iteration : 2950 | Loss : 2172.75
+Iteration : 2960 | Loss : 2929.23
+Iteration : 2970 | Loss : 5328.67
+Iteration : 2980 | Loss : 2399.16
+Iteration : 2990 | Loss : 3833.34
+Iteration : 3000 | Loss : 2829.28
+Iteration : 3010 | Loss : 4131.34
+Iteration : 3020 | Loss : 2616.05
+Iteration : 3030 | Loss : 3137.26
+Iteration : 3040 | Loss : 3872.78
+Iteration : 3050 | Loss : 3243.97
+Iteration : 3060 | Loss : 2935.94
+Iteration : 3070 | Loss : 2452.68
+Iteration : 3080 | Loss : 2766.32
+Iteration : 3090 | Loss : 2913.04
+Iteration : 3100 | Loss : 2765.02
+Iteration : 3110 | Loss : 2923.4
+Iteration : 3120 | Loss : 2786.69
+Iteration : 3130 | Loss : 3036.2
+Iteration : 3140 | Loss : 2359.63
+Iteration : 3150 | Loss : 3600.15
+Iteration : 3160 | Loss : 2512.62
+Iteration : 3170 | Loss : 2989.84
+Iteration : 3180 | Loss : 2971.62
+Iteration : 3190 | Loss : 2268.76
+Iteration : 3200 | Loss : 4460.84
+Iteration : 3210 | Loss : 2239.89
+Iteration : 3220 | Loss : 3224.18
+Iteration : 3230 | Loss : 3299.47
+Iteration : 3240 | Loss : 2376.82
+Iteration : 3250 | Loss : 2695.54
+Iteration : 3260 | Loss : 3796.45
+Iteration : 3270 | Loss : 3100.16
+Iteration : 3280 | Loss : 3526.94
+Iteration : 3290 | Loss : 3446.16
+Iteration : 3300 | Loss : 2307.87
+Iteration : 3310 | Loss : 2539.7
+Iteration : 3320 | Loss : 2712.57
+Iteration : 3330 | Loss : 3308.14
+Iteration : 3340 | Loss : 2899.41
+Iteration : 3350 | Loss : 2280.48
+Iteration : 3360 | Loss : 2486.63
+Iteration : 3370 | Loss : 3470.35
+Iteration : 3380 | Loss : 3221.08
+Iteration : 3390 | Loss : 2946.34
+Iteration : 3400 | Loss : 2715.87
+Iteration : 3410 | Loss : 2599.26
+Iteration : 3420 | Loss : 2943.48
+ERROR
+Iteration : 3430 | Loss : 3927.21
+Iteration : 3440 | Loss : 2945.07
+Iteration : 3450 | Loss : 2527.19
+Iteration : 3460 | Loss : 4257.31
+Iteration : 3470 | Loss : 2846.57
+Iteration : 3480 | Loss : 2961.41
+Iteration : 3490 | Loss : 3088.88
+Iteration : 3500 | Loss : 2591.02
+Iteration : 3510 | Loss : 3160.86
+Iteration : 3520 | Loss : 4375.37
+Iteration : 3530 | Loss : 6128.07
+Iteration : 3540 | Loss : 2884.4
+Iteration : 3550 | Loss : 2956.11
+Iteration : 3560 | Loss : 2800.63
+Iteration : 3570 | Loss : 2990.4
+Iteration : 3580 | Loss : 1887.86
+Iteration : 3590 | Loss : 3576.38
+Iteration : 3600 | Loss : 3384.41
+Iteration : 3610 | Loss : 3762.41
+Iteration : 3620 | Loss : 3152.28
+Iteration : 3630 | Loss : 2235.62
+Iteration : 3640 | Loss : 2938.37
+Iteration : 3650 | Loss : 2163.35
+Iteration : 3660 | Loss : 2921.67
+Iteration : 3670 | Loss : 3055.32
+Iteration : 3680 | Loss : 2876.54
+Iteration : 3690 | Loss : 3087.31
+Iteration : 3700 | Loss : 2410.08
+Iteration : 3710 | Loss : 3737.41
+Iteration : 3720 | Loss : 2685.84
+Iteration : 3730 | Loss : 3678.9
+Iteration : 3740 | Loss : 3488.98
+Iteration : 3750 | Loss : 2620.73
+Iteration : 3760 | Loss : 2425.54
+Iteration : 3770 | Loss : 3019.33
+Iteration : 3780 | Loss : 3046.21
+Iteration : 3790 | Loss : 2981.13
+Iteration : 3800 | Loss : 3571.84
+Iteration : 3810 | Loss : 2653.3
+Iteration : 3820 | Loss : 2159.51
+ERROR
+Iteration : 3830 | Loss : 2755.88
+Iteration : 3840 | Loss : 2504.75
+Iteration : 3850 | Loss : 3125.81
+Iteration : 3860 | Loss : 3411.3
+Iteration : 3870 | Loss : 4004.01
+Iteration : 3880 | Loss : 2990.79
+Iteration : 3890 | Loss : 3384.65
+Iteration : 3900 | Loss : 3593.81
+ERROR
+Iteration : 3910 | Loss : 2360.03
+Iteration : 3920 | Loss : 2767.45
+Iteration : 3930 | Loss : 2879.2
+Iteration : 3940 | Loss : 3707.66
+Iteration : 3950 | Loss : 3993.18
+Iteration : 3960 | Loss : 2402.98
+Iteration : 3970 | Loss : 3985.32
+Iteration : 3980 | Loss : 2709.1
+Iteration : 3990 | Loss : 2434.61
+Iteration : 4000 | Loss : 3683.4
+Iteration : 4010 | Loss : 2513.6
+Iteration : 4020 | Loss : 2741.79
+Iteration : 4030 | Loss : 3407.11
+Iteration : 4040 | Loss : 3493.46
+Iteration : 4050 | Loss : 2445.68
+Iteration : 4060 | Loss : 2325.48
+Iteration : 4070 | Loss : 2697.24
+Iteration : 4080 | Loss : 2370.16
+Iteration : 4090 | Loss : 1775.24
+Iteration : 4100 | Loss : 3094.96
+Iteration : 4110 | Loss : 3198.03
+Iteration : 4120 | Loss : 2882.74
+Iteration : 4130 | Loss : 4307.63
+Iteration : 4140 | Loss : 3250.87
+Iteration : 4150 | Loss : 2690.51
+Iteration : 4160 | Loss : 2912.58
+Iteration : 4170 | Loss : 3495.96
+Iteration : 4180 | Loss : 2315.6
+Iteration : 4190 | Loss : 3710.99
+Iteration : 4200 | Loss : 3328.42
+Iteration : 4210 | Loss : 3480.74
+Iteration : 4220 | Loss : 3225.5
+Iteration : 4230 | Loss : 3161.96
+Iteration : 4240 | Loss : 2887.12
+Iteration : 4250 | Loss : 2270.68
+Iteration : 4260 | Loss : 2874.22
+Iteration : 4270 | Loss : 3799.56
+Iteration : 4280 | Loss : 2513.44
+Iteration : 4290 | Loss : 2290.51
+Iteration : 4300 | Loss : 3442.61
+Iteration : 4310 | Loss : 2215.82
+Iteration : 4320 | Loss : 2997.61
+Iteration : 4330 | Loss : 2310.22display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcurand.so locally
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:01:00.0
+Total memory: 11.90GiB
+Free memory: 11.75GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+WARNING:tensorflow:From /home/matt/repositories/real_time_style_transfer/Train.py:49 in __train__.: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 1610 get requests, put_count=1582 evicted_count=1000 eviction_rate=0.632111 and unsatisfied allocation rate=0.700621
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 3973 get requests, put_count=3986 evicted_count=1000 eviction_rate=0.250878 and unsatisfied allocation rate=0.254216
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 256 to 281
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+/home/matt/repositories/real_time_style_transfer/./savedNets/vgg19.npy
+npy file loaded
+build model started
+build model finished: 0s
+/home/matt/repositories/real_time_style_transfer/./savedNets/vgg19.npy
+npy file loaded
+Creating Generator Network
+generator/Variable:0
+generator/biases:0
+generator/Variable_1:0
+generator/biases_1:0
+generator/Variable_2:0
+generator/biases_2:0
+generator/res1_4/Variable:0
+generator/res1_4/biases:0
+generator/res1_4/Variable_1:0
+generator/res1_4/biases_1:0
+generator/res2_5/Variable:0
+generator/res2_5/biases:0
+generator/res2_5/Variable_1:0
+generator/res2_5/biases_1:0
+generator/res3_6/Variable:0
+generator/res3_6/biases:0
+generator/res3_6/Variable_1:0
+generator/res3_6/biases_1:0
+generator/res4_7/Variable:0
+generator/res4_7/biases:0
+generator/res4_7/Variable_1:0
+generator/res4_7/biases_1:0
+generator/res5_8/Variable:0
+generator/res5_8/biases:0
+generator/res5_8/Variable_1:0
+generator/res5_8/biases_1:0
+generator/deconv1_9/Variable:0
+generator/deconv1_9/biases:0
+generator/deconv2_10/Variable:0
+generator/deconv2_10/biases:0
+generator/Variable_3:0
+generator/biases_3:0
+Generator Network Initialized
+build model started
+build model finished: 0s
+/home/matt/repositories/real_time_style_transfer/./savedNets/vgg19.npy
+npy file loaded
+build model started
+build model finished: 0s
+No model available for restoration
+Style Normalizing Constant for Layer 0 : 1190792.90892
+Style Normalizing Constant for Layer 1 : 683067.295777
+Style Normalizing Constant for Layer 2 : 674418.33503
+Style Normalizing Constant for Layer 3 : 681949.236351
+Style Normalizing Constant for Layer 4 : 25317.3218173
+Content Normalizing Constant : 735556
+Iteration : 0000 | Loss : 21343.6
+Iteration : 0010 | Loss : 18736.2
+Iteration : 0020 | Loss : 17282.6
+Iteration : 0030 | Loss : 15712.1
+Iteration : 0040 | Loss : 16397
+Iteration : 0050 | Loss : 16749.8
+Iteration : 0060 | Loss : 16503.2
+Iteration : 0070 | Loss : 13637.4
+Iteration : 0080 | Loss : 11613.5
+Iteration : 0090 | Loss : 13300.9
+Iteration : 0100 | Loss : 13389.8
+Iteration : 0110 | Loss : 13467.9
+Iteration : 0120 | Loss : 10105.6
+Iteration : 0130 | Loss : 10978
+Iteration : 0140 | Loss : 10836.8
+Iteration : 0150 | Loss : 9441.81
+Iteration : 0160 | Loss : 9940.53
+Iteration : 0170 | Loss : 10040
+Iteration : 0180 | Loss : 11913.3
+Iteration : 0190 | Loss : 8837.77
+Iteration : 0200 | Loss : 11207.1
+Iteration : 0210 | Loss : 8594.87
+Iteration : 0220 | Loss : 8526.55
+Iteration : 0230 | Loss : 10870.1
+Iteration : 0240 | Loss : 8252.62
+Iteration : 0250 | Loss : 8571.35
+Iteration : 0260 | Loss : 10260.2
+Iteration : 0270 | Loss : 10098.9
+Iteration : 0280 | Loss : 10843.6
+Iteration : 0290 | Loss : 10806.1
+Iteration : 0300 | Loss : 10642.6
+Iteration : 0310 | Loss : 8625.75
+Iteration : 0320 | Loss : 11274.1
+Iteration : 0330 | Loss : 9638.73
+Iteration : 0340 | Loss : 9091.84
+Iteration : 0350 | Loss : 7613.99
+Iteration : 0360 | Loss : 9635.08
+Iteration : 0370 | Loss : 12147.7
+Iteration : 0380 | Loss : 8588.67
+Iteration : 0390 | Loss : 10555.9
+Iteration : 0400 | Loss : 10717.6
+Iteration : 0410 | Loss : 8884.09
+Iteration : 0420 | Loss : 9386.03
+Iteration : 0430 | Loss : 9437.03
+Iteration : 0440 | Loss : 11383
+Iteration : 0450 | Loss : 8417.55
+Iteration : 0460 | Loss : 8846.93
+Iteration : 0470 | Loss : 8154.79
+Iteration : 0480 | Loss : 9610.47
+Iteration : 0490 | Loss : 10232.5
+Iteration : 0500 | Loss : 9471.03
+Iteration : 0510 | Loss : 7641.75
+Iteration : 0520 | Loss : 9065.96
+Iteration : 0530 | Loss : 6640.27
+Iteration : 0540 | Loss : 7551.81
+Iteration : 0550 | Loss : 7740.52
+Iteration : 0560 | Loss : 9830.42
+Iteration : 0570 | Loss : 7551.97
+Iteration : 0580 | Loss : 9282.68
+Iteration : 0590 | Loss : 10577
+Iteration : 0600 | Loss : 7367.31
+Iteration : 0610 | Loss : 8944.81
+Iteration : 0620 | Loss : 7785.29
+Iteration : 0630 | Loss : 8796.83
+Iteration : 0640 | Loss : 12001.6
+Iteration : 0650 | Loss : 5288.02
+Iteration : 0660 | Loss : 7771.33
+Iteration : 0670 | Loss : 9134.31
+Iteration : 0680 | Loss : 8014.93
+ERROR
+Iteration : 0690 | Loss : 10187.6
+Iteration : 0700 | Loss : 8143.79
+Iteration : 0710 | Loss : 7111.6
+Iteration : 0720 | Loss : 5801.22
+Iteration : 0730 | Loss : 9604.38
+Iteration : 0740 | Loss : 9262.27
+Iteration : 0750 | Loss : 6902.39
+Iteration : 0760 | Loss : 7512.79
+Iteration : 0770 | Loss : 7321.26
+Iteration : 0780 | Loss : 6874
+Iteration : 0790 | Loss : 7736.18
+Iteration : 0800 | Loss : 5810.71
+Iteration : 0810 | Loss : 5990.3
+Iteration : 0820 | Loss : 7052.21
+Iteration : 0830 | Loss : 9375.2
+Iteration : 0840 | Loss : 7400.79
+Iteration : 0850 | Loss : 7708.14
+Iteration : 0860 | Loss : 7424.01
+Iteration : 0870 | Loss : 6987.43
+Iteration : 0880 | Loss : 9141.9
+Iteration : 0890 | Loss : 8163.85
+Iteration : 0900 | Loss : 5529.77
+Iteration : 0910 | Loss : 8330.99
+Iteration : 0920 | Loss : 7195.64
+Iteration : 0930 | Loss : 6378.38
+Iteration : 0940 | Loss : 6461.68
+Iteration : 0950 | Loss : 6916.32
+Iteration : 0960 | Loss : 8675.05
+Iteration : 0970 | Loss : 6551.1
+Iteration : 0980 | Loss : 6014.98
+Iteration : 0990 | Loss : 9114.47
+Iteration : 1000 | Loss : 6503.6
+Iteration : 1010 | Loss : 5877.9
+Iteration : 1020 | Loss : 6183.58
+Iteration : 1030 | Loss : 7379.54
+Iteration : 1040 | Loss : 6538.06
+Iteration : 1050 | Loss : 8314.29
+Iteration : 1060 | Loss : 5970.98
+Iteration : 1070 | Loss : 7830.11
+Iteration : 1080 | Loss : 7901.63
+Iteration : 1090 | Loss : 6396.54
+Iteration : 1100 | Loss : 7504.38
+Iteration : 1110 | Loss : 7367.28
+Iteration : 1120 | Loss : 7195.3
+Iteration : 1130 | Loss : 6943.77
+Iteration : 1140 | Loss : 5861.78
+Iteration : 1150 | Loss : 6233.74
+Iteration : 1160 | Loss : 4935.44
+Iteration : 1170 | Loss : 7666.26
+Iteration : 1180 | Loss : 5221.24
+Iteration : 1190 | Loss : 7939.76
+Iteration : 1200 | Loss : 6154.06
+Iteration : 1210 | Loss : 7364.45
+Iteration : 1220 | Loss : 6763.94
+Iteration : 1230 | Loss : 6605.37
+Iteration : 1240 | Loss : 6288.45
+Iteration : 1250 | Loss : 6109.55
+Iteration : 1260 | Loss : 6648.12
+Iteration : 1270 | Loss : 6753.34
+Iteration : 1280 | Loss : 6851.43
+Iteration : 1290 | Loss : 6022.74
+Iteration : 1300 | Loss : 6543.67
+Iteration : 1310 | Loss : 8012.11
+Iteration : 1320 | Loss : 7039.67
+Iteration : 1330 | Loss : 5222.81
+Iteration : 1340 | Loss : 7291.83
+Iteration : 1350 | Loss : 6249.8
+Iteration : 1360 | Loss : 7459.09
+Iteration : 1370 | Loss : 4358.53
+Iteration : 1380 | Loss : 7928.23
+Iteration : 1390 | Loss : 6967.25
+Iteration : 1400 | Loss : 6670.78
+Iteration : 1410 | Loss : 8957.95
+Iteration : 1420 | Loss : 6618.65
+Iteration : 1430 | Loss : 9136.41
+Iteration : 1440 | Loss : 6124.68
+Iteration : 1450 | Loss : 5890.31
+Iteration : 1460 | Loss : 5873.18
+Iteration : 1470 | Loss : 6894.71
+Iteration : 1480 | Loss : 7835.38
+Iteration : 1490 | Loss : 6664.92
+Iteration : 1500 | Loss : 5314.26
+Iteration : 1510 | Loss : 5188.49
+Iteration : 1520 | Loss : 6606.95
+Iteration : 1530 | Loss : 8375.17
+Iteration : 1540 | Loss : 6961.91
+Iteration : 1550 | Loss : 4799.67
+Iteration : 1560 | Loss : 5076.77
+Iteration : 1570 | Loss : 5781.36
+Iteration : 1580 | Loss : 7316.24
+Iteration : 1590 | Loss : 7109.38
+Iteration : 1600 | Loss : 6239.16
+Iteration : 1610 | Loss : 9070.57
+Iteration : 1620 | Loss : 5776.73
+Iteration : 1630 | Loss : 6258.53
+Iteration : 1640 | Loss : 8144.41
+Iteration : 1650 | Loss : 5872.18
+Iteration : 1660 | Loss : 6761.88
+Iteration : 1670 | Loss : 5380.61
+Iteration : 1680 | Loss : 7504.9
+Iteration : 1690 | Loss : 6561.53
+Iteration : 1700 | Loss : 7542.67
+Iteration : 1710 | Loss : 5520.93
+Iteration : 1720 | Loss : 6271.1
+Iteration : 1730 | Loss : 5308.18
+Iteration : 1740 | Loss : 7238.69
+Iteration : 1750 | Loss : 7134.77
+Iteration : 1760 | Loss : 9381.45
+Iteration : 1770 | Loss : 5825.13
+Iteration : 1780 | Loss : 6867.52
+Iteration : 1790 | Loss : 6141.38
+Iteration : 1800 | Loss : 7780.01
+Iteration : 1810 | Loss : 5191.49
+Iteration : 1820 | Loss : 9604.64
+Iteration : 1830 | Loss : 6274.88
+Iteration : 1840 | Loss : 6865.94
+Iteration : 1850 | Loss : 5240.91
+Iteration : 1860 | Loss : 6775.91
+Iteration : 1870 | Loss : 6768.4
+Iteration : 1880 | Loss : 7030
+Iteration : 1890 | Loss : 6756.62
+Iteration : 1900 | Loss : 9872.77
+Iteration : 1910 | Loss : 6579.93
+Iteration : 1920 | Loss : 6495.58display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+
+Iteration : 1930 | Loss : 7131.27
+Iteration : 1940 | Loss : 8448.51
+Iteration : 1950 | Loss : 8068.71
+Iteration : 1960 | Loss : 6068.52
+Iteration : 1970 | Loss : 6732.25
+Iteration : 1980 | Loss : 6437.36
+Iteration : 1990 | Loss : 8004.97
+Iteration : 2000 | Loss : 7927.44
+Iteration : 2010 | Loss : 6415.34
+Iteration : 2020 | Loss : 6041.13
+Iteration : 2030 | Loss : 5249.89
+Iteration : 2040 | Loss : 6970.26
+Iteration : 2050 | Loss : 7628.06
+Iteration : 2060 | Loss : 5457.48
+Iteration : 2070 | Loss : 6076.73
+Iteration : 2080 | Loss : 5317.47
+Iteration : 2090 | Loss : 4939.26
+Iteration : 2100 | Loss : 4774.08
+Iteration : 2110 | Loss : 7859.81
+Iteration : 2120 | Loss : 6099.67
+Iteration : 2130 | Loss : 7822.13
+Iteration : 2140 | Loss : 4962.65
+Iteration : 2150 | Loss : 10462.5
+Iteration : 2160 | Loss : 5721.63
+Iteration : 2170 | Loss : 5882.96
+ERROR
+Iteration : 2180 | Loss : 7776.47
+Iteration : 2190 | Loss : 5701.56
+Iteration : 2200 | Loss : 6640.42
+Iteration : 2210 | Loss : 6487.82
+Iteration : 2220 | Loss : 5742.89
+Iteration : 2230 | Loss : 7335.81
+Iteration : 2240 | Loss : 8047.67
+Iteration : 2250 | Loss : 6155.06
+Iteration : 2260 | Loss : 9185.69
+Iteration : 2270 | Loss : 6795.68
+Iteration : 2280 | Loss : 5822.09
+Iteration : 2290 | Loss : 6684.83
+Iteration : 2300 | Loss : 5915.73
+Iteration : 2310 | Loss : 7365.78
+Iteration : 2320 | Loss : 6218.25
+Iteration : 2330 | Loss : 6903.48
+Iteration : 2340 | Loss : 5551.47
+Iteration : 2350 | Loss : 6194.08
+Iteration : 2360 | Loss : 4874.61
+Iteration : 2370 | Loss : 7568.27
+Iteration : 2380 | Loss : 6450.14
+Iteration : 2390 | Loss : 7187.44
+Iteration : 2400 | Loss : 6126.49
+Iteration : 2410 | Loss : 6180.68
+Iteration : 2420 | Loss : 4881.96
+Iteration : 2430 | Loss : 4722.11
+Iteration : 2440 | Loss : 7882.88
+Iteration : 2450 | Loss : 4473.87
+Iteration : 2460 | Loss : 6505.02
+Iteration : 2470 | Loss : 5307.29
+Iteration : 2480 | Loss : 7401.49
+Iteration : 2490 | Loss : 7723.7
+Iteration : 2500 | Loss : 7420.3
+Iteration : 2510 | Loss : 6012.57
+Iteration : 2520 | Loss : 10413.4
+Iteration : 2530 | Loss : 4934.07
+Iteration : 2540 | Loss : 4879.6
+Iteration : 2550 | Loss : 6300.66
+Iteration : 2560 | Loss : 10018
+Iteration : 2570 | Loss : 6674.7
+Iteration : 2580 | Loss : 6756.43
+Iteration : 2590 | Loss : 5322.83
+Iteration : 2600 | Loss : 5193.17
+ERROR
+Iteration : 2610 | Loss : 6580.47
+Iteration : 2620 | Loss : 6484.58
+Iteration : 2630 | Loss : 7336.87
+Iteration : 2640 | Loss : 4795.38
+Iteration : 2650 | Loss : 6265.36
+Iteration : 2660 | Loss : 6258.46
+Iteration : 2670 | Loss : 5063.25
+Iteration : 2680 | Loss : 5661.77
+Iteration : 2690 | Loss : 4519.44
+Iteration : 2700 | Loss : 12545.5
+Iteration : 2710 | Loss : 5199.51
+Iteration : 2720 | Loss : 6493.29
+Iteration : 2730 | Loss : 5459.89
+Iteration : 2740 | Loss : 8158.11
+Iteration : 2750 | Loss : 5482.4
+Iteration : 2760 | Loss : 5881.61
+Iteration : 2770 | Loss : 5860.8
+Iteration : 2780 | Loss : 4307.19
+Iteration : 2790 | Loss : 5730.91
+Iteration : 2800 | Loss : 9968.4
+Iteration : 2810 | Loss : 6327.69
+Iteration : 2820 | Loss : 4431.27
+Iteration : 2830 | Loss : 7229.42
+Iteration : 2840 | Loss : 5886.71
+Iteration : 2850 | Loss : 6387.86
+Iteration : 2860 | Loss : 4856.65
+Iteration : 2870 | Loss : 5963.78
+Iteration : 2880 | Loss : 5480.54
+Iteration : 2890 | Loss : 5243.14
+Iteration : 2900 | Loss : 4793.95
+Iteration : 2910 | Loss : 4818.02
+Iteration : 2920 | Loss : 5409.23
+Iteration : 2930 | Loss : 5359.78
+Iteration : 2940 | Loss : 6846.96
+Iteration : 2950 | Loss : 4460.02
+Iteration : 2960 | Loss : 5808.86
+Iteration : 2970 | Loss : 11531
+Iteration : 2980 | Loss : 5144.07
+Iteration : 2990 | Loss : 8821.85
+Iteration : 3000 | Loss : 5776.25
+Iteration : 3010 | Loss : 8393.08
+Iteration : 3020 | Loss : 5511.23
+Iteration : 3030 | Loss : 5717.22
+Iteration : 3040 | Loss : 7372.96
+Iteration : 3050 | Loss : 6330.2
+Iteration : 3060 | Loss : 5844.69
+Iteration : 3070 | Loss : 5260.78
+Iteration : 3080 | Loss : 5611.29
+Iteration : 3090 | Loss : 5998.42
+Iteration : 3100 | Loss : 6076.62
+Iteration : 3110 | Loss : 5799.38
+Iteration : 3120 | Loss : 5961.36
+Iteration : 3130 | Loss : 6039.84
+Iteration : 3140 | Loss : 5144.16
+Iteration : 3150 | Loss : 7186.34
+Iteration : 3160 | Loss : 5165.97
+Iteration : 3170 | Loss : 5965.24
+Iteration : 3180 | Loss : 6011.86
+Iteration : 3190 | Loss : 4150.91
+Iteration : 3200 | Loss : 10058.5
+Iteration : 3210 | Loss : 4919.52
+Iteration : 3220 | Loss : 6476.04
+Iteration : 3230 | Loss : 6036.84
+Iteration : 3240 | Loss : 5642.34
+Iteration : 3250 | Loss : 5636.95
+Iteration : 3260 | Loss : 7539.84
+Iteration : 3270 | Loss : 6064.92
+Iteration : 3280 | Loss : 6708.85
+Iteration : 3290 | Loss : 7245.25
+Iteration : 3300 | Loss : 5015.46
+Iteration : 3310 | Loss : 4677.36
+Iteration : 3320 | Loss : 5604.6
+Iteration : 3330 | Loss : 6591.45
+Iteration : 3340 | Loss : 5486.15
+Iteration : 3350 | Loss : 5043.38
+Iteration : 3360 | Loss : 5486.6
+Iteration : 3370 | Loss : 6905.55
+Iteration : 3380 | Loss : 6544.44
+Iteration : 3390 | Loss : 6476.14
+Iteration : 3400 | Loss : 5660.6
+Iteration : 3410 | Loss : 5337.46
+Iteration : 3420 | Loss : 6195.93
+ERROR
+Iteration : 3430 | Loss : 7596.67
+Iteration : 3440 | Loss : 5996.19
+Iteration : 3450 | Loss : 4609.52
+Iteration : 3460 | Loss : 9267.55
+Iteration : 3470 | Loss : 5621.36
+Iteration : 3480 | Loss : 6112.24
+Iteration : 3490 | Loss : 5789.29
+Iteration : 3500 | Loss : 5013.95
+Iteration : 3510 | Loss : 7001.25
+Iteration : 3520 | Loss : 8553.03
+Iteration : 3530 | Loss : 10223.7
+Iteration : 3540 | Loss : 6228.76
+Iteration : 3550 | Loss : 6812.6
+Iteration : 3560 | Loss : 5653.96
+Iteration : 3570 | Loss : 5806.63
+Iteration : 3580 | Loss : 4421.8
+Iteration : 3590 | Loss : 6662.75
+Iteration : 3600 | Loss : 6989.07
+Iteration : 3610 | Loss : 6403.09
+Iteration : 3620 | Loss : 6182.45
+Iteration : 3630 | Loss : 4796.43
+Iteration : 3640 | Loss : 5756.01
+Iteration : 3650 | Loss : 4564.16
+Iteration : 3660 | Loss : 5780.53
+Iteration : 3670 | Loss : 5269.37
+Iteration : 3680 | Loss : 6238.83
+Iteration : 3690 | Loss : 6151.41
+Iteration : 3700 | Loss : 4685.34
+Iteration : 3710 | Loss : 7016.11
+Iteration : 3720 | Loss : 5638.03
+Iteration : 3730 | Loss : 7622.34
+Iteration : 3740 | Loss : 7174.47
+Iteration : 3750 | Loss : 5615.65
+Iteration : 3760 | Loss : 5455.46
+Iteration : 3770 | Loss : 6234.05
+Iteration : 3780 | Loss : 5997.33
+Iteration : 3790 | Loss : 5897.86
+Iteration : 3800 | Loss : 7112.62
+Iteration : 3810 | Loss : 5176.18
+Iteration : 3820 | Loss : 4580.04
+ERROR
+Iteration : 3830 | Loss : 6061.36
+Iteration : 3840 | Loss : 5156.7
+Iteration : 3850 | Loss : 6614.87
+Iteration : 3860 | Loss : 6654.47
+Iteration : 3870 | Loss : 8382.55
+Iteration : 3880 | Loss : 5414.4
+Iteration : 3890 | Loss : 6903.12
+Iteration : 3900 | Loss : 7047.09
+ERROR
+Iteration : 3910 | Loss : 4659.69
+Iteration : 3920 | Loss : 6093.87
+Iteration : 3930 | Loss : 5991.81
+Iteration : 3940 | Loss : 6934.26
+Iteration : 3950 | Loss : 7608.44
+Iteration : 3960 | Loss : 4605.96
+Iteration : 3970 | Loss : 7312.38
+Iteration : 3980 | Loss : 5864.23
+Iteration : 3990 | Loss : 4652.77
+Iteration : 4000 | Loss : 7492.26
+Iteration : 4010 | Loss : 5696.4
+Iteration : 4020 | Loss : 5905.69
+Iteration : 4030 | Loss : 5693.24
+Iteration : 4040 | Loss : 6093.36
+Iteration : 4050 | Loss : 5380.9
+Iteration : 4060 | Loss : 4537.72
+Iteration : 4070 | Loss : 5629.94
+Iteration : 4080 | Loss : 4654.56
+Iteration : 4090 | Loss : 3907.95
+Iteration : 4100 | Loss : 6379.58
+Iteration : 4110 | Loss : 5025.64
+Iteration : 4120 | Loss : 5173.23
+Iteration : 4130 | Loss : 6656.14
+Iteration : 4140 | Loss : 5934.54
+Iteration : 4150 | Loss : 5380.83
+Iteration : 4160 | Loss : 6155.65
+Iteration : 4170 | Loss : 6707.02
+Iteration : 4180 | Loss : 5697.12
+Iteration : 4190 | Loss : 6983.08
+Iteration : 4200 | Loss : 6680.65
+Iteration : 4210 | Loss : 8207.29
+Iteration : 4220 | Loss : 6616.15
+Iteration : 4230 | Loss : 5799.06
+Iteration : 4240 | Loss : 5669.65
+Iteration : 4250 | Loss : 4913.13
+Iteration : 4260 | Loss : 5701.98
+Iteration : 4270 | Loss : 6788.86
+Iteration : 4280 | Loss : 5201.08
+Iteration : 4290 | Loss : 5718.05
+Iteration : 4300 | Loss : 6795.26
+Iteration : 4310 | Loss : 4326.97
+Iteration : 4320 | Loss : 6017.9
+Iteration : 4330 | Loss : 4660.61I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcurand.so locally
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:01:00.0
+Total memory: 11.90GiB
+Free memory: 11.75GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for ./savedNets/model.ckpt
+WARNING:tensorflow:From /home/matt/repositories/real_time_style_transfer/Train.py:49 in __train__.: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 1610 get requests, put_count=1582 evicted_count=1000 eviction_rate=0.632111 and unsatisfied allocation rate=0.700621
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 3973 get requests, put_count=3986 evicted_count=1000 eviction_rate=0.250878 and unsatisfied allocation rate=0.254216
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 256 to 281
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+/home/matt/repositories/real_time_style_transfer/./savedNets/vgg19.npy
+npy file loaded
+build model started
+build model finished: 0s
+/home/matt/repositories/real_time_style_transfer/./savedNets/vgg19.npy
+npy file loaded
+Creating Generator Network
+generator/Variable:0
+generator/biases:0
+generator/Variable_1:0
+generator/biases_1:0
+generator/Variable_2:0
+generator/biases_2:0
+generator/res1_4/Variable:0
+generator/res1_4/biases:0
+generator/res1_4/Variable_1:0
+generator/res1_4/biases_1:0
+generator/res2_5/Variable:0
+generator/res2_5/biases:0
+generator/res2_5/Variable_1:0
+generator/res2_5/biases_1:0
+generator/res3_6/Variable:0
+generator/res3_6/biases:0
+generator/res3_6/Variable_1:0
+generator/res3_6/biases_1:0
+generator/res4_7/Variable:0
+generator/res4_7/biases:0
+generator/res4_7/Variable_1:0
+generator/res4_7/biases_1:0
+generator/res5_8/Variable:0
+generator/res5_8/biases:0
+generator/res5_8/Variable_1:0
+generator/res5_8/biases_1:0
+generator/deconv1_9/Variable:0
+generator/deconv1_9/biases:0
+generator/deconv2_10/Variable:0
+generator/deconv2_10/biases:0
+generator/Variable_3:0
+generator/biases_3:0
+Generator Network Initialized
+build model started
+build model finished: 0s
+/home/matt/repositories/real_time_style_transfer/./savedNets/vgg19.npy
+npy file loaded
+build model started
+build model finished: 0s
+No model available for restoration
+Content Normalizing Constant : 735556
+Iteration : 0000 | Loss : 38643
+Iteration : 0010 | Loss : 31319.9
+Iteration : 0020 | Loss : 28305.2
+Iteration : 0030 | Loss : 25223
+Iteration : 0040 | Loss : 24716.6
+Iteration : 0050 | Loss : 24453.6
+Iteration : 0060 | Loss : 23643.5
+Iteration : 0070 | Loss : 22086.3
+Iteration : 0080 | Loss : 19335.7
+Iteration : 0090 | Loss : 20843.8
+Iteration : 0100 | Loss : 20017.5
+Iteration : 0110 | Loss : 21174.8
+Iteration : 0120 | Loss : 17460.2
+Iteration : 0130 | Loss : 16152.4
+Iteration : 0140 | Loss : 14879.9
+Iteration : 0150 | Loss : 14957.2
+Iteration : 0160 | Loss : 13951.4
+Iteration : 0170 | Loss : 13692.2
+Iteration : 0180 | Loss : 15211.3
+Iteration : 0190 | Loss : 12974.4
+Iteration : 0200 | Loss : 14220.9
+Iteration : 0210 | Loss : 12122
+Iteration : 0220 | Loss : 11490.6
+Iteration : 0230 | Loss : 14344
+Iteration : 0240 | Loss : 10948.7
+Iteration : 0250 | Loss : 11744.5
+Iteration : 0260 | Loss : 12861.7
+Iteration : 0270 | Loss : 12777.9
+Iteration : 0280 | Loss : 13456.1
+Iteration : 0290 | Loss : 13328.5
+Iteration : 0300 | Loss : 13188
+Iteration : 0310 | Loss : 11744.7
+Iteration : 0320 | Loss : 13793.5
+Iteration : 0330 | Loss : 11668.2
+Iteration : 0340 | Loss : 11535.6
+Iteration : 0350 | Loss : 9475.43
+Iteration : 0360 | Loss : 12054.4
+Iteration : 0370 | Loss : 15269.7
+Iteration : 0380 | Loss : 10439.9
+Iteration : 0390 | Loss : 13030.5
+Iteration : 0400 | Loss : 12960.2
+Iteration : 0410 | Loss : 11511.8
+Iteration : 0420 | Loss : 12099.3
+Iteration : 0430 | Loss : 12152.1
+Iteration : 0440 | Loss : 14833
+Iteration : 0450 | Loss : 11066.6
+Iteration : 0460 | Loss : 11170
+Iteration : 0470 | Loss : 11001.2
+Iteration : 0480 | Loss : 12938.1
+Iteration : 0490 | Loss : 12490.1
+Iteration : 0500 | Loss : 12773.9
+Iteration : 0510 | Loss : 9800.09
+Iteration : 0520 | Loss : 11656.1
+Iteration : 0530 | Loss : 9513.95
+Iteration : 0540 | Loss : 10515
+Iteration : 0550 | Loss : 11408
+Iteration : 0560 | Loss : 11741.2
+Iteration : 0570 | Loss : 10158
+Iteration : 0580 | Loss : 12043.7
+Iteration : 0590 | Loss : 12781.9
+Iteration : 0600 | Loss : 10434.7
+Iteration : 0610 | Loss : 12131.4
+Iteration : 0620 | Loss : 9970.5
+Iteration : 0630 | Loss : 10861.4
+Iteration : 0640 | Loss : 15420.1
+Iteration : 0650 | Loss : 7800.87
+Iteration : 0660 | Loss : 10448.3
+Iteration : 0670 | Loss : 11316.3
+Iteration : 0680 | Loss : 10818
+ERROR
+Iteration : 0690 | Loss : 13250.4
+Iteration : 0700 | Loss : 9882.7
+Iteration : 0710 | Loss : 9630.79
+Iteration : 0720 | Loss : 9287.96
+Iteration : 0730 | Loss : 13048.7
+Iteration : 0740 | Loss : 12299
+Iteration : 0750 | Loss : 9039.21
+Iteration : 0760 | Loss : 9748.65
+Iteration : 0770 | Loss : 10579.6
+Iteration : 0780 | Loss : 9632.1
+Iteration : 0790 | Loss : 10669.5
+Iteration : 0800 | Loss : 8197.9
+Iteration : 0810 | Loss : 8369.52
+Iteration : 0820 | Loss : 9701.66
+Iteration : 0830 | Loss : 12407.2
+Iteration : 0840 | Loss : 9590.31
+Iteration : 0850 | Loss : 10572
+Iteration : 0860 | Loss : 9610.35
+Iteration : 0870 | Loss : 8865.44
+Iteration : 0880 | Loss : 11596.2
+Iteration : 0890 | Loss : 10148.5
+Iteration : 0900 | Loss : 7900.59
+Iteration : 0910 | Loss : 10069.6
+Iteration : 0920 | Loss : 9164.38
+Iteration : 0930 | Loss : 8820.46
+Iteration : 0940 | Loss : 8356.49
+Iteration : 0950 | Loss : 9299.9
+Iteration : 0960 | Loss : 11547.8
+Iteration : 0970 | Loss : 8497.46
+Iteration : 0980 | Loss : 8206.7
+Iteration : 0990 | Loss : 11619.1
+Iteration : 1000 | Loss : 9826.39
+Iteration : 1010 | Loss : 8268.11
+Iteration : 1020 | Loss : 8907.33
+Iteration : 1030 | Loss : 9928.69
+Iteration : 1040 | Loss : 10011.9
+Iteration : 1050 | Loss : 9997.59
+Iteration : 1060 | Loss : 8535.31
+Iteration : 1070 | Loss : 11035.9
+Iteration : 1080 | Loss : 9909.95
+Iteration : 1090 | Loss : 8444.14
+Iteration : 1100 | Loss : 9657.42
+Iteration : 1110 | Loss : 10851.1
+Iteration : 1120 | Loss : 8960.51
+Iteration : 1130 | Loss : 9034.6
+Iteration : 1140 | Loss : 9110.99
+Iteration : 1150 | Loss : 8161.06
+Iteration : 1160 | Loss : 6917.61
+Iteration : 1170 | Loss : 9174.82
+Iteration : 1180 | Loss : 7999.97
+Iteration : 1190 | Loss : 10362.5
+Iteration : 1200 | Loss : 8460.62
+Iteration : 1210 | Loss : 9302.52
+Iteration : 1220 | Loss : 8668.38
+Iteration : 1230 | Loss : 8082.49
+Iteration : 1240 | Loss : 8313.33
+Iteration : 1250 | Loss : 8057.93
+Iteration : 1260 | Loss : 9292.51
+Iteration : 1270 | Loss : 8574.53
+Iteration : 1280 | Loss : 9460.98
+Iteration : 1290 | Loss : 8533.02
+Iteration : 1300 | Loss : 8869.62
+Iteration : 1310 | Loss : 11114.4
+Iteration : 1320 | Loss : 9126.12
+Iteration : 1330 | Loss : 7014.97
+Iteration : 1340 | Loss : 9707.24
+Iteration : 1350 | Loss : 8816.56
+Iteration : 1360 | Loss : 9092.29
+Iteration : 1370 | Loss : 7245.9
+Iteration : 1380 | Loss : 10618.2
+Iteration : 1390 | Loss : 9432.2
+Iteration : 1400 | Loss : 8964.95
+Iteration : 1410 | Loss : 12085.3
+Iteration : 1420 | Loss : 9693.54
+Iteration : 1430 | Loss : 11897.7
+Iteration : 1440 | Loss : 8485.69
+Iteration : 1450 | Loss : 8170.08
+Iteration : 1460 | Loss : 8265.54
+Iteration : 1470 | Loss : 8122.96
+Iteration : 1480 | Loss : 10783.9
+Iteration : 1490 | Loss : 9294.31
+Iteration : 1500 | Loss : 7092.38
+Iteration : 1510 | Loss : 7152.95
+Iteration : 1520 | Loss : 8509.61
+Iteration : 1530 | Loss : 10410.3
+Iteration : 1540 | Loss : 9260.57
+Iteration : 1550 | Loss : 6716.54
+Iteration : 1560 | Loss : 6801.86
+Iteration : 1570 | Loss : 8452.92
+Iteration : 1580 | Loss : 9700.66
+Iteration : 1590 | Loss : 8921.96
+Iteration : 1600 | Loss : 8534.37
+Iteration : 1610 | Loss : 12693
+Iteration : 1620 | Loss : 7845.18
+Iteration : 1630 | Loss : 8759.39
+Iteration : 1640 | Loss : 11369.6
+Iteration : 1650 | Loss : 7916.91
+Iteration : 1660 | Loss : 9173.64
+Iteration : 1670 | Loss : 7273.76
+Iteration : 1680 | Loss : 9125.85
+Iteration : 1690 | Loss : 9060.52
+Iteration : 1700 | Loss : 9347.91
+Iteration : 1710 | Loss : 7791.17
+Iteration : 1720 | Loss : 8021.69
+Iteration : 1730 | Loss : 7313.15
+Iteration : 1740 | Loss : 8649.06
+Iteration : 1750 | Loss : 9611.55
+Iteration : 1760 | Loss : 11534.2
+Iteration : 1770 | Loss : 8082.86
+Iteration : 1780 | Loss : 9110.87
+Iteration : 1790 | Loss : 8083.71
+Iteration : 1800 | Loss : 9527.64
+Iteration : 1810 | Loss : 6695.64
+Iteration : 1820 | Loss : 12893.7
+Iteration : 1830 | Loss : 7739.62
+Iteration : 1840 | Loss : 9146.17
+Iteration : 1850 | Loss : 7141.28
+Iteration : 1860 | Loss : 8842.91
+Iteration : 1870 | Loss : 8569.63
+Iteration : 1880 | Loss : 9089.5
+Iteration : 1890 | Loss : 8393.31
+Iteration : 1900 | Loss : 12567.2
+Iteration : 1910 | Loss : 8881.9
+Iteration : 1920 | Loss : 8176.74
+Iteration : 1930 | Loss : 9091.3
+Iteration : 1940 | Loss : 10315
+Iteration : 1950 | Loss : 10593.9
+Iteration : 1960 | Loss : 7967.4
+Iteration : 1970 | Loss : 9099.84
+Iteration : 1980 | Loss : 8700.95
+Iteration : 1990 | Loss : 10352.5
+Iteration : 2000 | Loss : 10035.6
+Iteration : 2010 | Loss : 8488.61display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+
+Iteration : 2020 | Loss : 7939.69
+Iteration : 2030 | Loss : 7238.71
+Iteration : 2040 | Loss : 9408.17
+Iteration : 2050 | Loss : 10154.5
+Iteration : 2060 | Loss : 7745.88
+Iteration : 2070 | Loss : 8066.02
+Iteration : 2080 | Loss : 7399.52
+Iteration : 2090 | Loss : 6833.02
+Iteration : 2100 | Loss : 6705.12
+Iteration : 2110 | Loss : 9525.09
+Iteration : 2120 | Loss : 7375.95
+Iteration : 2130 | Loss : 10091.7
+Iteration : 2140 | Loss : 7528.81
+Iteration : 2150 | Loss : 12459.6
+Iteration : 2160 | Loss : 7344.57
+Iteration : 2170 | Loss : 7765.4
+ERROR
+Iteration : 2180 | Loss : 10036.1
+Iteration : 2190 | Loss : 8266.38
+Iteration : 2200 | Loss : 8859.65
+Iteration : 2210 | Loss : 8230.12
+Iteration : 2220 | Loss : 7741.34
+Iteration : 2230 | Loss : 9459.5
+Iteration : 2240 | Loss : 10171.7
+Iteration : 2250 | Loss : 8667.96
+Iteration : 2260 | Loss : 11192.3
+Iteration : 2270 | Loss : 8898.89
+Iteration : 2280 | Loss : 8062.64
+Iteration : 2290 | Loss : 8421.26
+Iteration : 2300 | Loss : 7745.6
+Iteration : 2310 | Loss : 9533.17
+Iteration : 2320 | Loss : 8472.85
+Iteration : 2330 | Loss : 9185.63
+Iteration : 2340 | Loss : 7287.65
+Iteration : 2350 | Loss : 8482.6
+Iteration : 2360 | Loss : 7082.99
+Iteration : 2370 | Loss : 9766.36
+Iteration : 2380 | Loss : 8113.77
+Iteration : 2390 | Loss : 9989.75
+Iteration : 2400 | Loss : 7780.7
+Iteration : 2410 | Loss : 9180.05
+Iteration : 2420 | Loss : 6547.32
+Iteration : 2430 | Loss : 6679.21
+Iteration : 2440 | Loss : 10134.6
+Iteration : 2450 | Loss : 6726.38
+Iteration : 2460 | Loss : 8131.75
+Iteration : 2470 | Loss : 7020.72
+Iteration : 2480 | Loss : 11118.9
+Iteration : 2490 | Loss : 9066.73
+Iteration : 2500 | Loss : 9192.01
+Iteration : 2510 | Loss : 8432.9
+Iteration : 2520 | Loss : 12680.8
+Iteration : 2530 | Loss : 6673.94
+Iteration : 2540 | Loss : 6776.68
+Iteration : 2550 | Loss : 8353.27
+Iteration : 2560 | Loss : 12203.1
+Iteration : 2570 | Loss : 7879.61
+Iteration : 2580 | Loss : 8489.38
+Iteration : 2590 | Loss : 6721.36
+Iteration : 2600 | Loss : 7831.24
+ERROR
+Iteration : 2610 | Loss : 9049.78
+Iteration : 2620 | Loss : 8523.63
+Iteration : 2630 | Loss : 8504.7
+Iteration : 2640 | Loss : 6654.15
+Iteration : 2650 | Loss : 8701.8
+Iteration : 2660 | Loss : 8537.27
+Iteration : 2670 | Loss : 6501.43
+Iteration : 2680 | Loss : 7977.51
+Iteration : 2690 | Loss : 6392.33
+Iteration : 2700 | Loss : 15711.2
+Iteration : 2710 | Loss : 7749.44
+Iteration : 2720 | Loss : 8275.21
+Iteration : 2730 | Loss : 7627.34
+Iteration : 2740 | Loss : 9801.28
+Iteration : 2750 | Loss : 6656.57
+Iteration : 2760 | Loss : 7762.31
+Iteration : 2770 | Loss : 7393.15
+Iteration : 2780 | Loss : 6045.02
+Iteration : 2790 | Loss : 7562.96
+Iteration : 2800 | Loss : 11082
+Iteration : 2810 | Loss : 8902.26
+Iteration : 2820 | Loss : 5845.25
+Iteration : 2830 | Loss : 9790.4
+Iteration : 2840 | Loss : 7647.69
+Iteration : 2850 | Loss : 8332.49
+Iteration : 2860 | Loss : 6610.45
+Iteration : 2870 | Loss : 8027.56
+Iteration : 2880 | Loss : 7986.96
+Iteration : 2890 | Loss : 7085.88
+Iteration : 2900 | Loss : 6594.65
+Iteration : 2910 | Loss : 6493.48
+Iteration : 2920 | Loss : 7368.38
+Iteration : 2930 | Loss : 7538.01
+Iteration : 2940 | Loss : 8867.79
+Iteration : 2950 | Loss : 6339.24
+Iteration : 2960 | Loss : 7316.35
+Iteration : 2970 | Loss : 15066
+Iteration : 2980 | Loss : 6975.61
+Iteration : 2990 | Loss : 11030.1
+Iteration : 3000 | Loss : 7352.3
+Iteration : 3010 | Loss : 10247.6
+Iteration : 3020 | Loss : 7245.97
+Iteration : 3030 | Loss : 7147.32
+Iteration : 3040 | Loss : 8853.87
+Iteration : 3050 | Loss : 7787.52
+Iteration : 3060 | Loss : 7350.31
+Iteration : 3070 | Loss : 7208.16
+Iteration : 3080 | Loss : 7484.27
+Iteration : 3090 | Loss : 8638.12
+Iteration : 3100 | Loss : 8637.48
+Iteration : 3110 | Loss : 7218.25
+Iteration : 3120 | Loss : 8013.97
+Iteration : 3130 | Loss : 7949.94
+Iteration : 3140 | Loss : 7265.48
+Iteration : 3150 | Loss : 8541.78
+Iteration : 3160 | Loss : 7008.4
+Iteration : 3170 | Loss : 7544.83
+Iteration : 3180 | Loss : 7914.52
+Iteration : 3190 | Loss : 6132.25
+Iteration : 3200 | Loss : 13636.7
+Iteration : 3210 | Loss : 6801.83
+Iteration : 3220 | Loss : 8593.78
+Iteration : 3230 | Loss : 7834.28
+Iteration : 3240 | Loss : 7699.56
+Iteration : 3250 | Loss : 7797.17
+Iteration : 3260 | Loss : 9150.3
+Iteration : 3270 | Loss : 7343.42
+Iteration : 3280 | Loss : 8268.09
+Iteration : 3290 | Loss : 8908.09
+Iteration : 3300 | Loss : 6981.39
+Iteration : 3310 | Loss : 5882.23
+Iteration : 3320 | Loss : 7343.48
+Iteration : 3330 | Loss : 8329.49
+Iteration : 3340 | Loss : 7491.9
+Iteration : 3350 | Loss : 6577.23
+Iteration : 3360 | Loss : 7585.12
+Iteration : 3370 | Loss : 8206.27
+Iteration : 3380 | Loss : 8714.67
+Iteration : 3390 | Loss : 7913.29
+Iteration : 3400 | Loss : 7552.15
+Iteration : 3410 | Loss : 7184.66
+Iteration : 3420 | Loss : 7772.28
+ERROR
+Iteration : 3430 | Loss : 9921.46
+Iteration : 3440 | Loss : 7653.98
+Iteration : 3450 | Loss : 6135.21
+Iteration : 3460 | Loss : 10674.7
+Iteration : 3470 | Loss : 7543.48
+Iteration : 3480 | Loss : 7674.84
+Iteration : 3490 | Loss : 7316.05
+Iteration : 3500 | Loss : 6674.22
+Iteration : 3510 | Loss : 8770.62
+Iteration : 3520 | Loss : 11860.3
+Iteration : 3530 | Loss : 11731.7
+Iteration : 3540 | Loss : 8328.06
+Iteration : 3550 | Loss : 9521.56
+Iteration : 3560 | Loss : 7436.37
+Iteration : 3570 | Loss : 7109.64
+Iteration : 3580 | Loss : 6276.8
+Iteration : 3590 | Loss : 8027.94
+Iteration : 3600 | Loss : 8647.63
+Iteration : 3610 | Loss : 7887.05
+Iteration : 3620 | Loss : 7669.57
+Iteration : 3630 | Loss : 6498.85
+Iteration : 3640 | Loss : 7431.35
+Iteration : 3650 | Loss : 6074.32
+Iteration : 3660 | Loss : 7235.75
+Iteration : 3670 | Loss : 6795.52
+Iteration : 3680 | Loss : 7973.55
+Iteration : 3690 | Loss : 8148.84
+Iteration : 3700 | Loss : 6155.02
+Iteration : 3710 | Loss : 8307.75
+Iteration : 3720 | Loss : 7468.22
+Iteration : 3730 | Loss : 9679.46
+Iteration : 3740 | Loss : 9038.18
+Iteration : 3750 | Loss : 7480.4
+Iteration : 3760 | Loss : 7439.11
+Iteration : 3770 | Loss : 7846.02
+Iteration : 3780 | Loss : 7956.92
+Iteration : 3790 | Loss : 7546.39
+Iteration : 3800 | Loss : 8760.2
+Iteration : 3810 | Loss : 7057.27
+Iteration : 3820 | Loss : 6439.12
+ERROR
+Iteration : 3830 | Loss : 7500.08
+Iteration : 3840 | Loss : 7376.85
+Iteration : 3850 | Loss : 8138.46
+Iteration : 3860 | Loss : 8291.75
+Iteration : 3870 | Loss : 10970.7
+Iteration : 3880 | Loss : 6978.85
+Iteration : 3890 | Loss : 8918.35
+Iteration : 3900 | Loss : 8863.72
+ERROR
+Iteration : 3910 | Loss : 6173.58
+Iteration : 3920 | Loss : 7394.35
+Iteration : 3930 | Loss : 7720.34
+Iteration : 3940 | Loss : 8117.38
+Iteration : 3950 | Loss : 8910.58
+Iteration : 3960 | Loss : 6170.29
+Iteration : 3970 | Loss : 8837.04
+Iteration : 3980 | Loss : 7674.24
+Iteration : 3990 | Loss : 6286.89
+Iteration : 4000 | Loss : 9863.48
+Iteration : 4010 | Loss : 7414.53
+Iteration : 4020 | Loss : 7897.67
+Iteration : 4030 | Loss : 7248.74
+Iteration : 4040 | Loss : 7825.06
+Iteration : 4050 | Loss : 7323.43
+Iteration : 4060 | Loss : 6118.04
+Iteration : 4070 | Loss : 7029.28
+Iteration : 4080 | Loss : 6074.59
+Iteration : 4090 | Loss : 5474.77
+Iteration : 4100 | Loss : 8459.86
+Iteration : 4110 | Loss : 6315.02
+Iteration : 4120 | Loss : 6581.14
+Iteration : 4130 | Loss : 8072.93
+Iteration : 4140 | Loss : 7518.48
+Iteration : 4150 | Loss : 7255.85
+Iteration : 4160 | Loss : 7988.01
+Iteration : 4170 | Loss : 8631.02
+Iteration : 4180 | Loss : 7090.42
+Iteration : 4190 | Loss : 8832.38
+Iteration : 4200 | Loss : 8783.63
+Iteration : 4210 | Loss : 11284
+Iteration : 4220 | Loss : 8500.75
+Iteration : 4230 | Loss : 7278.57
+Iteration : 4240 | Loss : 7040.97
+Iteration : 4250 | Loss : 6211.11
+Iteration : 4260 | Loss : 7993.9
+Iteration : 4270 | Loss : 8252.86
+Iteration : 4280 | Loss : 6673.08
+Iteration : 4290 | Loss : 7858.32
+Iteration : 4300 | Loss : 8600.64
+Iteration : 4310 | Loss : 5947.02
+Iteration : 4320 | Loss : 7804.19
+Iteration : 4330 | Loss : 6097.93
+Iteration : 4340 | Loss : 8334.22
+Iteration : 4350 | Loss : 5688.45
+Iteration : 4360 | Loss : 8572.08
+Iteration : 4370 | Loss : 8071.26
+Iteration : 4380 | Loss : 6987.79
+Iteration : 4390 | Loss : 7735.56
+Iteration : 4400 | Loss : 7294.63
+Iteration : 4410 | Loss : 6550.66
+Iteration : 4420 | Loss : 7431.64display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+
+Iteration : 4430 | Loss : 9251.92
+Iteration : 4440 | Loss : 7521.08
+Iteration : 4450 | Loss : 7088
+ERROR
+Iteration : 4460 | Loss : 8336.9
+Iteration : 4470 | Loss : 6080.32
+Iteration : 4480 | Loss : 7102.76
+Iteration : 4490 | Loss : 7385.97
+Iteration : 4500 | Loss : 9157.66
+Iteration : 4510 | Loss : 8061.03
+Iteration : 4520 | Loss : 6552.35
+Iteration : 4530 | Loss : 5360.5
+Iteration : 4540 | Loss : 9608.68
+Iteration : 4550 | Loss : 5774.73
+Iteration : 4560 | Loss : 5987.48
+Iteration : 4570 | Loss : 6740.4
+Iteration : 4580 | Loss : 7525.07
+Iteration : 4590 | Loss : 7746.92
+Iteration : 4600 | Loss : 8483.75
+Iteration : 4610 | Loss : 6282.53
+Iteration : 4620 | Loss : 7237.64
+Iteration : 4630 | Loss : 6577.46
+Iteration : 4640 | Loss : 7723
+Iteration : 4650 | Loss : 6613.6
+Iteration : 4660 | Loss : 7004.39
+Iteration : 4670 | Loss : 7380.7
+Iteration : 4680 | Loss : 9335.57
+Iteration : 4690 | Loss : 7488.38
+Iteration : 4700 | Loss : 5816.3
+Iteration : 4710 | Loss : 7131.26
+Iteration : 4720 | Loss : 8660.79
+Iteration : 4730 | Loss : 7512.21
+Iteration : 4740 | Loss : 7719.37
+Iteration : 4750 | Loss : 6716.82
+Iteration : 4760 | Loss : 10050.7
+Iteration : 4770 | Loss : 6038.61
+Iteration : 4780 | Loss : 6628.77
+Iteration : 4790 | Loss : 8597.31
+Iteration : 4800 | Loss : 9207.72
+Iteration : 4810 | Loss : 6820.72
+Iteration : 4820 | Loss : 8750.97
+Iteration : 4830 | Loss : 7795.57
+Iteration : 4840 | Loss : 6446.94
+Iteration : 4850 | Loss : 7601.26
+Iteration : 4860 | Loss : 13062.1
+Iteration : 4870 | Loss : 7822.2
+Iteration : 4880 | Loss : 6447.85
+Iteration : 4890 | Loss : 7302.83
+Iteration : 4900 | Loss : 7367.28
+Iteration : 4910 | Loss : 10382
+Iteration : 4920 | Loss : 8717.72
+Iteration : 4930 | Loss : 9525.44
+Iteration : 4940 | Loss : 7362.48
+Iteration : 4950 | Loss : 7968.4
+Iteration : 4960 | Loss : 4968.79
+Iteration : 4970 | Loss : 7464.48
+Iteration : 4980 | Loss : 7720.2
+Iteration : 4990 | Loss : 10406.9
+Iteration : 5000 | Loss : 7657.68
+Iteration : 5010 | Loss : 8940.93
+Iteration : 5020 | Loss : 6798.52
+ERROR
+Iteration : 5030 | Loss : 8319.58
+Iteration : 5040 | Loss : 9390.91
+Iteration : 5050 | Loss : 7685.59
+Iteration : 5060 | Loss : 7716.56
+Iteration : 5070 | Loss : 8822.98
+Iteration : 5080 | Loss : 6597.12
+Iteration : 5090 | Loss : 7515.41
+Iteration : 5100 | Loss : 9441.97
+Iteration : 5110 | Loss : 5509.64
+Iteration : 5120 | Loss : 14355.5
+Iteration : 5130 | Loss : 10044.7
+Iteration : 5140 | Loss : 7261.8
+Iteration : 5150 | Loss : 6562.87
+Iteration : 5160 | Loss : 8483.07
+Iteration : 5170 | Loss : 8334.72
+Iteration : 5180 | Loss : 6753.98
+Iteration : 5190 | Loss : 8546.31
+Iteration : 5200 | Loss : 7756.82
+Iteration : 5210 | Loss : 7287.6
+Iteration : 5220 | Loss : 7483.21
+Iteration : 5230 | Loss : 8809.76
+Iteration : 5240 | Loss : 8407.5
+Iteration : 5250 | Loss : 6961.76
+Iteration : 5260 | Loss : 6000.7
+Iteration : 5270 | Loss : 6713.95
+Iteration : 5280 | Loss : 6026.09
+Iteration : 5290 | Loss : 6307.93
+Iteration : 5300 | Loss : 6952.97
+Iteration : 5310 | Loss : 7071.75
+Iteration : 5320 | Loss : 5975.12
+Iteration : 5330 | Loss : 7573.95
+Iteration : 5340 | Loss : 6632.25
+Iteration : 5350 | Loss : 5901.37
+Iteration : 5360 | Loss : 10154.6
+Iteration : 5370 | Loss : 7866.59
+Iteration : 5380 | Loss : 7510.63
+Iteration : 5390 | Loss : 6654.75
+Iteration : 5400 | Loss : 6935.28
+Iteration : 5410 | Loss : 6525.87
+Iteration : 5420 | Loss : 6793.91
+Iteration : 5430 | Loss : 6674.96
+Iteration : 5440 | Loss : 6220.95
+Iteration : 5450 | Loss : 8153.58
+Iteration : 5460 | Loss : 6701.71
+Iteration : 5470 | Loss : 10473.4
+Iteration : 5480 | Loss : 6296.89
+Iteration : 5490 | Loss : 9077.46
+Iteration : 5500 | Loss : 6646.17
+Iteration : 5510 | Loss : 8599.64
+Iteration : 5520 | Loss : 6265.51
+Iteration : 5530 | Loss : 6003.22
+Iteration : 5540 | Loss : 7602.42
+Iteration : 5550 | Loss : 8100.19
+Iteration : 5560 | Loss : 7141.42
+Iteration : 5570 | Loss : 7308.57
+Iteration : 5580 | Loss : 6596.45
+Iteration : 5590 | Loss : 7637.68
+Iteration : 5600 | Loss : 7372.16
+Iteration : 5610 | Loss : 5534.59
+Iteration : 5620 | Loss : 6671.4
+Iteration : 5630 | Loss : 6836.48
+Iteration : 5640 | Loss : 6350.28
+Iteration : 5650 | Loss : 9471.21
+Iteration : 5660 | Loss : 6941.48
+Iteration : 5670 | Loss : 9630.21
+Iteration : 5680 | Loss : 8181.18
+Iteration : 5690 | Loss : 6920.08
+Iteration : 5700 | Loss : 7799.27
+Iteration : 5710 | Loss : 9073.85
+Iteration : 5720 | Loss : 7047.87
+Iteration : 5730 | Loss : 6213.98
+Iteration : 5740 | Loss : 6947.76
+Iteration : 5750 | Loss : 7550.37
+Iteration : 5760 | Loss : 6616.05
+Iteration : 5770 | Loss : 6353.72
+Iteration : 5780 | Loss : 7054.81
+Iteration : 5790 | Loss : 7885.7
+Iteration : 5800 | Loss : 5891.23
+Iteration : 5810 | Loss : 6603.37
+Iteration : 5820 | Loss : 5682.31
+Iteration : 5830 | Loss : 7507
+Iteration : 5840 | Loss : 6632.92
+Iteration : 5850 | Loss : 6896.64
+Iteration : 5860 | Loss : 6837.35
+Iteration : 5870 | Loss : 9483.13
+Iteration : 5880 | Loss : 7741.15
+Iteration : 5890 | Loss : 7572.63
+Iteration : 5900 | Loss : 6565.7
+Iteration : 5910 | Loss : 7644.03
+Iteration : 5920 | Loss : 7736.32
+Iteration : 5930 | Loss : 10299.1
+Iteration : 5940 | Loss : 7887.03
+Iteration : 5950 | Loss : 7522.86
+Iteration : 5960 | Loss : 6733.26
+Iteration : 5970 | Loss : 7103.62
+Iteration : 5980 | Loss : 10237.7
+Iteration : 5990 | Loss : 7535.34
+Iteration : 6000 | Loss : 8321.13
+Iteration : 6010 | Loss : 7009.14
+Iteration : 6020 | Loss : 6327.57
+Iteration : 6030 | Loss : 8334.95
+Iteration : 6040 | Loss : 6087.16
+Iteration : 6050 | Loss : 5635.48
+Iteration : 6060 | Loss : 6910.76
+Iteration : 6070 | Loss : 7514.5
+Iteration : 6080 | Loss : 5025.83
+Iteration : 6090 | Loss : 7616.67
+Iteration : 6100 | Loss : 6844.36
+Iteration : 6110 | Loss : 5931.62
+Iteration : 6120 | Loss : 6611.21
+Iteration : 6130 | Loss : 7691.1
+Iteration : 6140 | Loss : 6723.72
+Iteration : 6150 | Loss : 6479.36
+Iteration : 6160 | Loss : 8119.03
+Iteration : 6170 | Loss : 7073.94
+Iteration : 6180 | Loss : 6144.7
+Iteration : 6190 | Loss : 8386.18
+Iteration : 6200 | Loss : 7144.75
+Iteration : 6210 | Loss : 8474.14
+Iteration : 6220 | Loss : 10504.9
+Iteration : 6230 | Loss : 6736.05
+Iteration : 6240 | Loss : 4955.71
+Iteration : 6250 | Loss : 5526.6
+ERROR
+Iteration : 6260 | Loss : 7888.39
+Iteration : 6270 | Loss : 7032.78
+Iteration : 6280 | Loss : 6510.62
+Iteration : 6290 | Loss : 7321.17
+Iteration : 6300 | Loss : 6136.72
+Iteration : 6310 | Loss : 7871.61
+Iteration : 6320 | Loss : 8254.09
+Iteration : 6330 | Loss : 7951.46
+Iteration : 6340 | Loss : 7238.4
+Iteration : 6350 | Loss : 7567.6
+Iteration : 6360 | Loss : 10230.3
+Iteration : 6370 | Loss : 8049.97
+Iteration : 6380 | Loss : 7955.2
+Iteration : 6390 | Loss : 6787.57
+Iteration : 6400 | Loss : 8650.53
+Iteration : 6410 | Loss : 7435.46
+Iteration : 6420 | Loss : 7551.08
+ERROR
+Iteration : 6430 | Loss : 7176.48
+Iteration : 6440 | Loss : 8035.98
+Iteration : 6450 | Loss : 6291.46
+Iteration : 6460 | Loss : 5569.98
+Iteration : 6470 | Loss : 6993.82
+Iteration : 6480 | Loss : 6701.68
+Iteration : 6490 | Loss : 7190.13
+Iteration : 6500 | Loss : 8385
+Iteration : 6510 | Loss : 7676.65
+Iteration : 6520 | Loss : 6666.5
+Iteration : 6530 | Loss : 7918.88
+Iteration : 6540 | Loss : 5633.53
+Iteration : 6550 | Loss : 5958.25
+Iteration : 6560 | Loss : 8357.03
+Iteration : 6570 | Loss : 7333.8
+Iteration : 6580 | Loss : 5971.42
+Iteration : 6590 | Loss : 7869.64
+Iteration : 6600 | Loss : 6621.52
+Iteration : 6610 | Loss : 6333.75
+Iteration : 6620 | Loss : 6633.31
+Iteration : 6630 | Loss : 8010.1
+Iteration : 6640 | Loss : 8127.52
+Iteration : 6650 | Loss : 6447.15
+Iteration : 6660 | Loss : 5814.91
+Iteration : 6670 | Loss : 7958.02
+Iteration : 6680 | Loss : 6299.26
+Iteration : 6690 | Loss : 8887.13
+Iteration : 6700 | Loss : 5739.58
+Iteration : 6710 | Loss : 9197.63
+Iteration : 6720 | Loss : 7992.88
+Iteration : 6730 | Loss : 9448.33
+Iteration : 6740 | Loss : 9031.28
+Iteration : 6750 | Loss : 5649.88
+Iteration : 6760 | Loss : 6221.68
+Iteration : 6770 | Loss : 5985.49
+Iteration : 6780 | Loss : 6153.44
+Iteration : 6790 | Loss : 5872.37
+Iteration : 6800 | Loss : 6050.54
+Iteration : 6810 | Loss : 7043.21
+Iteration : 6820 | Loss : 7035.82
+Iteration : 6830 | Loss : 8208.34
+Iteration : 6840 | Loss : 7788.89display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+
+Iteration : 6850 | Loss : 7176.64
+Iteration : 6860 | Loss : 7900.91
+Iteration : 6870 | Loss : 8494.38
+Iteration : 6880 | Loss : 7699.06
+Iteration : 6890 | Loss : 9217.14
+Iteration : 6900 | Loss : 5861.08
+Iteration : 6910 | Loss : 6356.44
+Iteration : 6920 | Loss : 6893.96
+Iteration : 6930 | Loss : 7376.97
+Iteration : 6940 | Loss : 7341.52
+Iteration : 6950 | Loss : 5467.77
+Iteration : 6960 | Loss : 8463.94
+Iteration : 6970 | Loss : 7152.95
+Iteration : 6980 | Loss : 8270.11
+Iteration : 6990 | Loss : 5460.98
+Iteration : 7000 | Loss : 8636.87
+ERROR
+Iteration : 7010 | Loss : 4644.41
+Iteration : 7020 | Loss : 7522.84
+ERROR
+Iteration : 7030 | Loss : 5261.57
+Iteration : 7040 | Loss : 9615.64
+Iteration : 7050 | Loss : 8037.14
+Iteration : 7060 | Loss : 6400.88
+Iteration : 7070 | Loss : 5997.76
+Iteration : 7080 | Loss : 7882.13
+Iteration : 7090 | Loss : 12345.2
+Iteration : 7100 | Loss : 5190.98
+Iteration : 7110 | Loss : 9129.9
+Iteration : 7120 | Loss : 6009.85
+Iteration : 7130 | Loss : 6301.38
+Iteration : 7140 | Loss : 6094.99
+Iteration : 7150 | Loss : 8022.72
+Iteration : 7160 | Loss : 7366.92
+Iteration : 7170 | Loss : 6794.24
+Iteration : 7180 | Loss : 9510.72
+Iteration : 7190 | Loss : 8006
+Iteration : 7200 | Loss : 6648.22
+Iteration : 7210 | Loss : 6037.3
+Iteration : 7220 | Loss : 5645.32
+Iteration : 7230 | Loss : 5286.84
+Iteration : 7240 | Loss : 7771.36
+Iteration : 7250 | Loss : 7055.57
+Iteration : 7260 | Loss : 9455.53
+Iteration : 7270 | Loss : 6009.37
+Iteration : 7280 | Loss : 6820.38
+Iteration : 7290 | Loss : 6619.95
+Iteration : 7300 | Loss : 8184.02
+Iteration : 7310 | Loss : 6003.88
+Iteration : 7320 | Loss : 7365.4
+Iteration : 7330 | Loss : 9516.73
+Iteration : 7340 | Loss : 5659.97
+Iteration : 7350 | Loss : 7240.25
+Iteration : 7360 | Loss : 6553.47
+Iteration : 7370 | Loss : 6143.36
+Iteration : 7380 | Loss : 8252.02
+Iteration : 7390 | Loss : 8243.52
+Iteration : 7400 | Loss : 5827.24
+Iteration : 7410 | Loss : 7791.93
+Iteration : 7420 | Loss : 5197.71
+Iteration : 7430 | Loss : 8124.09
+Iteration : 7440 | Loss : 7516.13
+Iteration : 7450 | Loss : 8237.71
+Iteration : 7460 | Loss : 7845.51
+Iteration : 7470 | Loss : 6666.73
+Iteration : 7480 | Loss : 8313.05
+Iteration : 7490 | Loss : 5805.91
+Iteration : 7500 | Loss : 6291.16
+Iteration : 7510 | Loss : 7941.25
+Iteration : 7520 | Loss : 6966.9
+Iteration : 7530 | Loss : 7294.36
+Iteration : 7540 | Loss : 6106.88
+Iteration : 7550 | Loss : 7027.74
+Iteration : 7560 | Loss : 7622.15
+Iteration : 7570 | Loss : 7508.54
+Iteration : 7580 | Loss : 5890.53
+Iteration : 7590 | Loss : 7467.87
+Iteration : 7600 | Loss : 8061.67
+Iteration : 7610 | Loss : 6230.87
+Iteration : 7620 | Loss : 6721.79
+Iteration : 7630 | Loss : 6656.7
+Iteration : 7640 | Loss : 4899.3
+Iteration : 7650 | Loss : 6424.29
+Iteration : 7660 | Loss : 5744.97
+Iteration : 7670 | Loss : 4228.36
+Iteration : 7680 | Loss : 7015.07
+Iteration : 7690 | Loss : 7519.97
+Iteration : 7700 | Loss : 7642.89
+Iteration : 7710 | Loss : 8493.26
+Iteration : 7720 | Loss : 8936.37
+Iteration : 7730 | Loss : 5639.93
+Iteration : 7740 | Loss : 8077.37
+Iteration : 7750 | Loss : 7255.41
+Iteration : 7760 | Loss : 6859.86
+Iteration : 7770 | Loss : 6879.75
+Iteration : 7780 | Loss : 6998.94
+Iteration : 7790 | Loss : 7349.37
+Iteration : 7800 | Loss : 5431.79
+Iteration : 7810 | Loss : 7868.52
+Iteration : 7820 | Loss : 6044.91
+Iteration : 7830 | Loss : 9014.89
+Iteration : 7840 | Loss : 8046.55
+Iteration : 7850 | Loss : 5810.84
+Iteration : 7860 | Loss : 8947.67
+ERROR
+ERROR
+Iteration : 7870 | Loss : 6776.25
+Iteration : 7880 | Loss : 6963.34
+Iteration : 7890 | Loss : 6915.46
+Iteration : 7900 | Loss : 6605.82
+Iteration : 7910 | Loss : 8378.38
+Iteration : 7920 | Loss : 7947.55
+Iteration : 7930 | Loss : 6810.34
+Iteration : 7940 | Loss : 7856.3
+Iteration : 7950 | Loss : 7576.72
+Iteration : 7960 | Loss : 5766.35
+Iteration : 7970 | Loss : 6987.22
+Iteration : 7980 | Loss : 4959.29
+Iteration : 7990 | Loss : 7568.9
+Iteration : 8000 | Loss : 6993.84
+Iteration : 8010 | Loss : 7249.4
+Iteration : 8020 | Loss : 7304.01
+Iteration : 8030 | Loss : 7115.32
+ERROR
+Iteration : 8040 | Loss : 6490.37
+Iteration : 8050 | Loss : 7127.74
+Iteration : 8060 | Loss : 5580.16
+Iteration : 8070 | Loss : 7715.82
+Iteration : 8080 | Loss : 11783.7
+Iteration : 8090 | Loss : 8124.97
+Iteration : 8100 | Loss : 7434.38
+Iteration : 8110 | Loss : 7855.99
+Iteration : 8120 | Loss : 5716.33
+Iteration : 8130 | Loss : 7163.54
+Iteration : 8140 | Loss : 6210.65
+Iteration : 8150 | Loss : 8451.16
+Iteration : 8160 | Loss : 7540.36
+Iteration : 8170 | Loss : 6517.2
+Iteration : 8180 | Loss : 8269.62
+Iteration : 8190 | Loss : 7457.89
+Iteration : 8200 | Loss : 5870.58
+Iteration : 8210 | Loss : 9552.36
+Iteration : 8220 | Loss : 6176.76
+Iteration : 8230 | Loss : 5870.67
+Iteration : 8240 | Loss : 6525.63
+Iteration : 8250 | Loss : 6593.21
+Iteration : 8260 | Loss : 5842.09
+Iteration : 8270 | Loss : 6309.09
+Iteration : 8280 | Loss : 6340.18
+Iteration : 8290 | Loss : 7708.4
+Iteration : 8300 | Loss : 7690.03
+Iteration : 8310 | Loss : 7119.06
+Iteration : 8320 | Loss : 8808.53
+Iteration : 8330 | Loss : 7164.87
+Iteration : 8340 | Loss : 5890.54
+Iteration : 8350 | Loss : 6797.37
+Iteration : 8360 | Loss : 7140.78
+Iteration : 8370 | Loss : 5807.68
+Iteration : 8380 | Loss : 7607.88
+Iteration : 8390 | Loss : 5770.77
+Iteration : 8400 | Loss : 7406.88
+Iteration : 8410 | Loss : 8348.43
+Iteration : 8420 | Loss : 6756.17
+Iteration : 8430 | Loss : 7734.87
+Iteration : 8440 | Loss : 9203.75
+Iteration : 8450 | Loss : 6485.15
+Iteration : 8460 | Loss : 6528.36
+Iteration : 8470 | Loss : 7499.19
+Iteration : 8480 | Loss : 7605.9
+Iteration : 8490 | Loss : 6308.02
+Iteration : 8500 | Loss : 5879.09
+Iteration : 8510 | Loss : 6767.19
+Iteration : 8520 | Loss : 6942.44
+Iteration : 8530 | Loss : 7469.52
+Iteration : 8540 | Loss : 6702.31
+Iteration : 8550 | Loss : 5957.71
+Iteration : 8560 | Loss : 6754.27
+Iteration : 8570 | Loss : 7225.43
+Iteration : 8580 | Loss : 8843.8
+Iteration : 8590 | Loss : 10495.4
+Iteration : 8600 | Loss : 8309.69
+Iteration : 8610 | Loss : 7569.16
+Iteration : 8620 | Loss : 5897.81
+Iteration : 8630 | Loss : 8708.56
+Iteration : 8640 | Loss : 6484.59
+Iteration : 8650 | Loss : 8646.27
+Iteration : 8660 | Loss : 7670.94
+Iteration : 8670 | Loss : 6338.54
+Iteration : 8680 | Loss : 5587.53
+Iteration : 8690 | Loss : 6804.36
+Iteration : 8700 | Loss : 8843.03
+Iteration : 8710 | Loss : 8189.24
+Iteration : 8720 | Loss : 6375.42
+Iteration : 8730 | Loss : 6404.11
+Iteration : 8740 | Loss : 6597.02
+Iteration : 8750 | Loss : 8789.91
+Iteration : 8760 | Loss : 6961.05
+Iteration : 8770 | Loss : 8303.57
+Iteration : 8780 | Loss : 7721.56
+Iteration : 8790 | Loss : 9450.99
+Iteration : 8800 | Loss : 5408.43
+Iteration : 8810 | Loss : 5988.92
+Iteration : 8820 | Loss : 8556.87
+Iteration : 8830 | Loss : 7131.4
+Iteration : 8840 | Loss : 7669.03
+Iteration : 8850 | Loss : 5329.2
+Iteration : 8860 | Loss : 6121.62
+ERROR
+Iteration : 8870 | Loss : 6319.82
+Iteration : 8880 | Loss : 6481.98
+Iteration : 8890 | Loss : 7738.59
+Iteration : 8900 | Loss : 6775.12
+Iteration : 8910 | Loss : 6370.36
+Iteration : 8920 | Loss : 5746.21
+Iteration : 8930 | Loss : 7382.96
+Iteration : 8940 | Loss : 8494.76
+Iteration : 8950 | Loss : 7453.57
+Iteration : 8960 | Loss : 8479.91
+Iteration : 8970 | Loss : 7990.81
+Iteration : 8980 | Loss : 5809.31
+Iteration : 8990 | Loss : 6188.74
+Iteration : 9000 | Loss : 9150.63
+Iteration : 9010 | Loss : 5472.38
+Iteration : 9020 | Loss : 8621.17
+Iteration : 9030 | Loss : 6412.49
+Iteration : 9040 | Loss : 7709.57
+Iteration : 9050 | Loss : 8858.15
+Iteration : 9060 | Loss : 6210.43
+Iteration : 9070 | Loss : 7975.15
+Iteration : 9080 | Loss : 9100.37
+Iteration : 9090 | Loss : 6662.17
+Iteration : 9100 | Loss : 6949.86
+Iteration : 9110 | Loss : 5535.02
+Iteration : 9120 | Loss : 5352.04
+Iteration : 9130 | Loss : 6442.91
+Iteration : 9140 | Loss : 6484.31
+Iteration : 9150 | Loss : 4900.78
+Iteration : 9160 | Loss : 4669.4
+Iteration : 9170 | Loss : 5918.04
+Iteration : 9180 | Loss : 6982.32
+Iteration : 9190 | Loss : 4721.09
+Iteration : 9200 | Loss : 5129.31
+Iteration : 9210 | Loss : 8869.6
+Iteration : 9220 | Loss : 7190.72
+Iteration : 9230 | Loss : 8186.34
+Iteration : 9240 | Loss : 5218.36
+Iteration : 9250 | Loss : 5427.17display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+display: unable to open X server `' @ error/display.c/DisplayImageCommand/426.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res5_8/biases not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res4_7/biases/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res5_8/Variable not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res4_7/biases_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res4_7/biases not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res4_7/biases_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res4_7/biases/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res4_7/Variable_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res4_7/biases_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res5_8/Variable_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res5_8/Variable/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res5_8/biases_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res5_8/Variable/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res5_8/biases/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res5_8/Variable_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res5_8/biases/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res4_7/Variable_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/Variable_2 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/Variable_3 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/Variable not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res5_8/Variable_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res5_8/biases_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res4_7/Variable_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res5_8/biases_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/biases_3 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/Variable_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/deconv1_9/biases not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/biases not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/biases_2 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/deconv2_10/biases not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/biases_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/deconv2_10/Variable not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res2_5/biases not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res2_5/Variable_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/deconv1_9/Variable not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res1_4/biases not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res3_6/biases_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res2_5/Variable not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res1_4/Variable not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res1_4/biases_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res1_4/Variable_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res3_6/biases not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res3_6/Variable_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res3_6/Variable not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res4_7/Variable not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator_1/res2_5/biases_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable_4 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key beta2_power not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable_2 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res4_7/Variable/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/Variable/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/Variable/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key beta1_power not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable_3 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/Variable_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/Variable_3/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/Variable_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/Variable_2/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res4_7/Variable/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/biases/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/Variable_3/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/Variable_2/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/biases/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/biases_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/biases_2/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/deconv1_9/Variable/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/biases_2/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/biases_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res3_6/biases_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/biases_3/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/deconv1_9/Variable/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/biases_3/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res1_4/Variable/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/deconv2_10/Variable/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/deconv2_10/biases/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/deconv2_10/Variable/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/deconv1_9/biases/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res3_6/biases_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/deconv1_9/biases/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res1_4/Variable/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res1_4/Variable_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res1_4/biases/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res1_4/Variable_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res1_4/biases/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res1_4/biases_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/deconv2_10/biases/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res2_5/Variable/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res1_4/biases_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res2_5/Variable_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res2_5/Variable/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res2_5/biases_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res2_5/Variable_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res2_5/biases/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res3_6/biases/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res3_6/Variable/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res2_5/biases_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res2_5/biases/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res3_6/Variable/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res3_6/biases/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res3_6/Variable_1/Adam_1 not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key generator/res3_6/Variable_1/Adam not found in checkpoint
+W tensorflow/core/framework/op_kernel.cc:975] Not found: Key Variable not found in checkpoint
+	 [[Node: save_1/RestoreV2 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2/tensor_names, save_1/RestoreV2/shape_and_slices)]]
+
+Iteration : 9260 | Loss : 5948.44
+Iteration : 9270 | Loss : 6511.83
+Iteration : 9280 | Loss : 6113.02
+Iteration : 9290 | Loss : 6708.02
+Iteration : 9300 | Loss : 6340.27
+Iteration : 9310 | Loss : 8384.27
+Iteration : 9320 | Loss : 7266.88
+Iteration : 9330 | Loss : 7366.26
+Iteration : 9340 | Loss : 4205.5
+Iteration : 9350 | Loss : 9996.03
+Iteration : 9360 | Loss : 5427.11
+Iteration : 9370 | Loss : 6612.27
+Iteration : 9380 | Loss : 5658.95
+Iteration : 9390 | Loss : 7100.74
+Iteration : 9400 | Loss : 6532.03
+Iteration : 9410 | Loss : 7380.91
+Iteration : 9420 | Loss : 6348.57
+Iteration : 9430 | Loss : 6332.08
+Iteration : 9440 | Loss : 7281.92
+Iteration : 9450 | Loss : 6083.84
+Iteration : 9460 | Loss : 6534.59
+Iteration : 9470 | Loss : 7390.44
+Iteration : 9480 | Loss : 7457.2
+Iteration : 9490 | Loss : 8075.38
+Iteration : 9500 | Loss : 9489.52
+Iteration : 9510 | Loss : 7828.88
+Iteration : 9520 | Loss : 6522.34
+Iteration : 9530 | Loss : 6300.1
+Iteration : 9540 | Loss : 9444.47
+Iteration : 9550 | Loss : 8972.17
+Iteration : 9560 | Loss : 5629.6
+Iteration : 9570 | Loss : 7643.56
+Iteration : 9580 | Loss : 7662.46
+Iteration : 9590 | Loss : 6672.08
+Iteration : 9600 | Loss : 5102.26
+Iteration : 9610 | Loss : 6663.98
+Iteration : 9620 | Loss : 6318.29
+Iteration : 9630 | Loss : 7626.88
+Iteration : 9640 | Loss : 7688.16
+Iteration : 9650 | Loss : 4761.14
+Iteration : 9660 | Loss : 6635.88
+Iteration : 9670 | Loss : 7344.19
+Iteration : 9680 | Loss : 6872.49
+Iteration : 9690 | Loss : 7162.35
+Iteration : 9700 | Loss : 6180.08
+Iteration : 9710 | Loss : 5976.14
+Iteration : 9720 | Loss : 6507.62
+Iteration : 9730 | Loss : 7518.33
+Iteration : 9740 | Loss : 6242.75
+Iteration : 9750 | Loss : 6699.72
+Iteration : 9760 | Loss : 5247.92
+Iteration : 9770 | Loss : 6465.78
+Iteration : 9780 | Loss : 5446.66
+Iteration : 9790 | Loss : 6339.14
+Iteration : 9800 | Loss : 7228.17
+Iteration : 9810 | Loss : 9227.06
+Iteration : 9820 | Loss : 9835.73
+Iteration : 9830 | Loss : 5701.97
+Iteration : 9840 | Loss : 8170.07
+Iteration : 9850 | Loss : 9309.86
+Iteration : 9860 | Loss : 5482.23
+Iteration : 9870 | Loss : 8701.7
+Iteration : 9880 | Loss : 5889.69
+Iteration : 9890 | Loss : 5766.88
+Iteration : 9900 | Loss : 6435.4
+Iteration : 9910 | Loss : 7230.79
+Iteration : 9920 | Loss : 7346.53
+Iteration : 9930 | Loss : 7052.18
+Iteration : 9940 | Loss : 6195.82
+Iteration : 9950 | Loss : 6284.58
+Iteration : 9960 | Loss : 7014.5
+Iteration : 9970 | Loss : 6516.17
+Iteration : 9980 | Loss : 5249.33
+Iteration : 9990 | Loss : 5828.78
++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Experiment Complete! Elapsed Time : 4494.784131765366
+Creating Generator Network
+generator/Variable:0
+generator/biases:0
+generator/Variable_1:0
+generator/biases_1:0
+generator/Variable_2:0
+generator/biases_2:0
+generator/res1_4/Variable:0
+generator/res1_4/biases:0
+generator/res1_4/Variable_1:0
+generator/res1_4/biases_1:0
+generator/res2_5/Variable:0
+generator/res2_5/biases:0
+generator/res2_5/Variable_1:0
+generator/res2_5/biases_1:0
+generator/res3_6/Variable:0
+generator/res3_6/biases:0
+generator/res3_6/Variable_1:0
+generator/res3_6/biases_1:0
+generator/res4_7/Variable:0
+generator/res4_7/biases:0
+generator/res4_7/Variable_1:0
+generator/res4_7/biases_1:0
+generator/res5_8/Variable:0
+generator/res5_8/biases:0
+generator/res5_8/Variable_1:0
+generator/res5_8/biases_1:0
+generator/deconv1_9/Variable:0
+generator/deconv1_9/biases:0
+generator/deconv2_10/Variable:0
+generator/deconv2_10/biases:0
+generator/Variable_3:0
+generator/biases_3:0
+generator_1/Variable:0
+generator_1/biases:0
+generator_1/Variable_1:0
+generator_1/biases_1:0
+generator_1/Variable_2:0
+generator_1/biases_2:0
+generator_1/res1_4/Variable:0
+generator_1/res1_4/biases:0
+generator_1/res1_4/Variable_1:0
+generator_1/res1_4/biases_1:0
+generator_1/res2_5/Variable:0
+generator_1/res2_5/biases:0
+generator_1/res2_5/Variable_1:0
+generator_1/res2_5/biases_1:0
+generator_1/res3_6/Variable:0
+generator_1/res3_6/biases:0
+generator_1/res3_6/Variable_1:0
+generator_1/res3_6/biases_1:0
+generator_1/res4_7/Variable:0
+generator_1/res4_7/biases:0
+generator_1/res4_7/Variable_1:0
+generator_1/res4_7/biases_1:0
+generator_1/res5_8/Variable:0
+generator_1/res5_8/biases:0
+generator_1/res5_8/Variable_1:0
+generator_1/res5_8/biases_1:0
+generator_1/deconv1_9/Variable:0
+generator_1/deconv1_9/biases:0
+generator_1/deconv2_10/Variable:0
+generator_1/deconv2_10/biases:0
+generator_1/Variable_3:0
+generator_1/biases_3:0
+Generator Network Initialized
+No model available for restoration
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1021, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1003, in _run_fn
+    status, run_metadata)
+  File "/usr/lib/python3.5/contextlib.py", line 66, in __exit__
+    next(self.gen)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/errors_impl.py", line 469, in raise_exception_on_not_ok_status
+    pywrap_tensorflow.TF_GetCode(status))
+tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to use uninitialized value generator_1/Variable
+	 [[Node: generator_1/Variable/read = Identity[T=DT_FLOAT, _class=["loc:@generator_1/Variable"], _device="/job:localhost/replica:0/task:0/gpu:0"](generator_1/Variable)]]
+	 [[Node: generator_1/res4_7/instance_norm/moments/sufficient_statistics/Shape/_309 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/cpu:0", send_device="/job:localhost/replica:0/task:0/gpu:0", send_device_incarnation=1, tensor_name="edge_450_generator_1/res4_7/instance_norm/moments/sufficient_statistics/Shape", tensor_type=DT_INT32, _device="/job:localhost/replica:0/task:0/cpu:0"]()]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Runner.py", line 26, in <module>
+    tester.predict("./testImages", pathIsDir = True)
+  File "/home/matt/repositories/real_time_style_transfer/Test.py", line 30, in predict
+    img = self.gen.predict(testImg.reshape(1,self.imageShape[0],self.imageShape[1],self.imageShape[2]))
+  File "/home/matt/repositories/real_time_style_transfer/Generator.py", line 40, in predict
+    return self.sess.run(self.output, feed_dict={self.inputContent:inputImage})   
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 766, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 964, in _run
+    feed_dict_string, options, run_metadata)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1014, in _do_run
+    target_list, options, run_metadata)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1034, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to use uninitialized value generator_1/Variable
+	 [[Node: generator_1/Variable/read = Identity[T=DT_FLOAT, _class=["loc:@generator_1/Variable"], _device="/job:localhost/replica:0/task:0/gpu:0"](generator_1/Variable)]]
+	 [[Node: generator_1/res4_7/instance_norm/moments/sufficient_statistics/Shape/_309 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/cpu:0", send_device="/job:localhost/replica:0/task:0/gpu:0", send_device_incarnation=1, tensor_name="edge_450_generator_1/res4_7/instance_norm/moments/sufficient_statistics/Shape", tensor_type=DT_INT32, _device="/job:localhost/replica:0/task:0/cpu:0"]()]]
+
+Caused by op 'generator_1/Variable/read', defined at:
+  File "Runner.py", line 24, in <module>
+    tester = Test.LoadedModel(sess,testImageShape, modelPath = "./savedNets/model.ckpt")
+  File "/home/matt/repositories/real_time_style_transfer/Test.py", line 13, in __init__
+    self.gen = Generator.GeneratorNet(self.sess, self.imageShape, trainingNet = False)
+  File "/home/matt/repositories/real_time_style_transfer/Generator.py", line 18, in __init__
+    conv_1 = self.__convLayer__(self.inputContent, 9, 32, 1, "conv1_1")
+  File "/home/matt/repositories/real_time_style_transfer/Generator.py", line 46, in __convLayer__
+    convFilter = tf.Variable(tf.random_normal([filterWH, filterWH, numInputFeatures, numOutputFeatures], stddev=np.sqrt(2./( (filterWH**2)*numInputFeatures)), name="weights"))
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/variables.py", line 224, in __init__
+    expected_shape=expected_shape)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/variables.py", line 370, in _init_from_args
+    self._snapshot = array_ops.identity(self._variable, name="read")
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/gen_array_ops.py", line 1424, in identity
+    result = _op_def_lib.apply_op("Identity", input=input, name=name)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/op_def_library.py", line 759, in apply_op
+    op_def=op_def)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2240, in create_op
+    original_op=self._default_original_op, op_def=op_def)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 1128, in __init__
+    self._traceback = _extract_stack()
+
+FailedPreconditionError (see above for traceback): Attempting to use uninitialized value generator_1/Variable
+	 [[Node: generator_1/Variable/read = Identity[T=DT_FLOAT, _class=["loc:@generator_1/Variable"], _device="/job:localhost/replica:0/task:0/gpu:0"](generator_1/Variable)]]
+	 [[Node: generator_1/res4_7/instance_norm/moments/sufficient_statistics/Shape/_309 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/cpu:0", send_device="/job:localhost/replica:0/task:0/gpu:0", send_device_incarnation=1, tensor_name="edge_450_generator_1/res4_7/instance_norm/moments/sufficient_statistics/Shape", tensor_type=DT_INT32, _device="/job:localhost/replica:0/task:0/cpu:0"]()]]
+

@@ -10,7 +10,7 @@ class LoadedModel():
         
         self.sess  = sess
         self.imageShape = imageShape
-        self.gen = Generator.GeneratorNet(self.sess, self.imageShape)
+        self.gen = Generator.GeneratorNet(self.sess, self.imageShape, trainingNet = True)
         saver = tf.train.Saver()
         try:
             
@@ -38,5 +38,10 @@ class LoadedModel():
             utils.showImage(img,self.imageShape, "NewTrials"+ str(element))
             elasped = time.time() - start
             print("Made Prediction | Time taken : %s"%(element, elasped))
+            
+    def predictImage(self, imgData):
+        #For webcam api
+        img = self.gen.predict(imgData.reshape(1,self.imageShape[0],self.imageShape[1],self.imageShape[2]))
+        return img
             
     

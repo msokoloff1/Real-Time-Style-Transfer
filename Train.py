@@ -42,7 +42,7 @@ class Trainer():
         
             self.__train__(model, inputVar,model_content, vggContentPlaceholder, self.sess, gen)
             save_path = saver.save(self.sess, savePath) #"./modelNight.ckpt"
-            sess.close()
+            
         
     def __train__(self, model, inputVar,contentModel, contentPH,  sess, gen):
         updateTensor, lossTensor, grads = self.lossObj.getUpdateTensor(model, gen.trainableVars, contentModel)
