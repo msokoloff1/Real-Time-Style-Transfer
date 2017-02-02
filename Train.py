@@ -13,7 +13,7 @@ import Loss
 ## This file
 
 class Trainer():
-    def __init__(self, savePath,numIters, imageShape ,contentPath,contentLayer,stylePath,styleLayers,styleWeights,TVNormLossWeight, styleLossWeight,contentLossWeight,  verbose = True, showEveryN = 100):
+    def __init__(self, savePath,numIters, imageShape ,contentPath,contentLayer,stylePath,styleLayers,styleWeights,TVNormLossWeight, styleLossWeight,contentLossWeight,  verbose = True, showEveryN = 500):
         #Own session so it goes away after training
         with tf.Session() as sess:
             self.sess  = sess    
@@ -46,9 +46,9 @@ class Trainer():
         
     def __train__(self, model, inputVar,contentModel, contentPH,  sess, gen):
         updateTensor, lossTensor, grads = self.lossObj.getUpdateTensor(model, gen.trainableVars, contentModel)
-        sess.run(tf.initialize_all_variables())
+        sess.run(tf.global_variables_initializer())
         start_time = time.time()
-        testImg = np.array(utils.loadImage("./images/testingContent.jpg", self.imageShape))
+        testImg = np.array(utils.loadImage("./sourceImages/testingContent.jpg", self.imageShape))
         
         for iteration in range(0,self.numIters):
             inputImage = self.__getBatch__(iteration)
@@ -68,7 +68,7 @@ class Trainer():
 
 
     def __getBatch__(self,iteration):
-        dir="/home/matt/repositories/coco/train2014"
+        dir="../repositories/coco/train2014"
         filenames = os.listdir(dir)
         batch = []
         iter = iteration%80000

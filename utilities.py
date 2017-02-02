@@ -26,12 +26,12 @@ def loadImage(path, imageShape, display=False):
         return np.array(loadImage('./images/testingContent1.jpg', imageShape)) 
 
 
-def showImage(image, shape, name):
+def showImage(image, shape, destDir, name):
     try:
         img = np.clip(image,0, 1) * 255
         img = Image.fromarray((img.reshape(shape)).astype('uint8'), 'RGB')
         img.show()
-        img.save("./results/"+name+".jpg", "JPEG")
+        img.save(destDir+"/"+name+".jpg", "JPEG")
     except:
         print("Unable to display")
 
