@@ -21,7 +21,7 @@ parser.add_argument('-result_dir'      , default = './results'                  
 parser.add_argument('-train'           , default = False, type=bool                                      , help = 'Flag indicating whether to train or not')
 parser.add_argument('-xfer'            , default = True, type=bool                                       , help = 'Flag indicating whether to perform style transfer or not')
 parser.add_argument('-train_iters'     , default = 20000, type=int                                       , help = 'Number of iterations for training operation')
-parser.add_argument('-style_image_path', default = './sourceImages/testingArcd ..t.jpg'                       , help = 'Number of iterations for training operation')
+parser.add_argument('-style_image_path', default = './sourceImages/testingArt.jpg'                       , help = 'Image to use for copying the style')
 parser.add_argument('-style_layers'    , default = ['conv1_2','conv2_2','conv3_3', 'conv4_1', 'conv5_1'] , help = 'Which layers of the vgg network to be used for obtaining style statistics')
 parser.add_argument('-style_weights'   , default = [0.2      ,0.2     , 0.3     , 0.3       , 0.2      ] , help = 'Weights for the loss between generator result and style image for each layer in the vgg network')
 parser.add_argument('-tvnorm_weight'   , default = 0.00001, type=float                                   , help = 'Weight for the tv norm loss')
