@@ -11,7 +11,7 @@
 <div align="left">
 
 
-<p>This style transfer algorithm is based on the paper <a href="https://arxiv.org/pdf/1603.08155v1.pdf">Perceptual Losses for Real-Time Style Transfer and Super-Resolution</a>. The algorithm allows us to train a deep residual convolutional neural network to learn how to apply an artistic style to any arbitrary input image. The resulting network produces visually appleaing images in a small fraction of a second. Our implementation deviates from the paper in three respects. First, we use <a href="https://arxiv.org/pdf/1607.08022v2.pdf">instance normalization</a>. This allows for many fewer iterations to achieve the same results in the original paper. Additionally, our process uses a single image in each batch. Finally, we employed total variation norm to encourage piece-wise consistency introduced by the paper <a href="https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/mahendran15understanding.pdf">Understanding Deep Image Representations by Inverting Them.</a> Otherwise we follow the same specifications as the paper.</p>
+<p>This style transfer algorithm is based on the paper <a href="https://arxiv.org/pdf/1603.08155v1.pdf">Perceptual Losses for Real-Time Style Transfer and Super-Resolution</a>. The algorithm allows us to train a deep residual convolutional neural network to learn how to apply an artistic style to any arbitrary input image. The resulting network produces visually appealing images in a small fraction of a second. Our implementation deviates from the paper in three respects. First, we use <a href="https://arxiv.org/pdf/1607.08022v2.pdf">instance normalization</a>. This allows for many fewer iterations to achieve the same results in the original paper. Additionally, our process uses a single image in each batch. Finally, we employed total variation norm to encourage piecewise consistency introduced by the paper <a href="https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/mahendran15understanding.pdf">Understanding Deep Image Representations by Inverting Them.</a> Otherwise we follow the same specifications as the paper.</p>
 <br>
 <p>The example to the right contains the original style and content side by side. Beneath them is the result of applying the style transfer. Please see the results section below for more examples.
 </div>
@@ -53,17 +53,16 @@
 </table>
 
 
-
 #Architecture:
 ###Overview
- The architecture had few differences from the architecture used by Johnson et al. There is a generator network used to produce a stylized image and a discriminator network used to provide feedback to the generator.
+Our architecture had was mostly similar to the architecture used by Johnson et al. In both implementations, there is a generator network used to produce a stylized image and a discriminator network used to provide feedback to the generator.
 ####Loss Function
-The loss function used to train the generator consists of two parts. First, there is a content loss which attempts to minimize the distance between the discriminators activations when given a real image and when given the output of the generator net. The second part of the loss uses global statistics to create an error metric for the style. We obtain these statistics by calculating the inner product of all the activations between each feature map (gram matrix). The style loss consists of the difference between the gram matrices that are produced from the generator input and the style image input.
+The loss function used to train the generator consists of two parts. First, there is a content loss which describes the distance between the discriminators activations when given a real image and when given the output of the generator net. The second part of the loss uses global statistics to create an error metric for the style. We obtain these statistics by calculating the inner product of all the activations between each feature map (gram matrix). The style loss consists of the difference between the gram matrices that are produced from the generator input and the style image input.
 #####
-The gradients are only applied to the generator weights, and not to the discriminator network. This is because we only care about the output of the generator. Furthermore, the prior knowledge encoded by the discriminator's weights network's is what allows it to effectively capture image statistics.
+The gradients are only applied to the generator weights, and not to the discriminator network. This is because we only care about the output of the generator. Furthermore, the prior knowledge encoded by the discriminator weights is what allows it to effectively capture image statistics.
 ####Network Architectures
 #####Discriminator
-The discriminator network is a pretrained VGG network. This network takes an image as input and produces statistics which we use to create our loss function. This network was created for the classifying a wide variety of images. We use a stock version (see credits section below) and modify it to allow for any size image. Unlike classification networks that require a fixed number of outputs, our style network can produce statistics for arbitarily sized images. Therefore, we remove this constraint. Additionally, we remove the max pooling and replace it with average pooling to obtain smoother results.
+The discriminator network is a pretrained VGG network. This network takes an image as input and produces statistics which we use to create our loss function. This network was created for classifying a wide variety of images. We use a stock version (see credits section below) and modify it to allow for any size image. Unlike classification networks that require a fixed number of outputs, our style network can produce statistics for arbitrarily sized images. Therefore, we remove this constraint. Additionally, we remove the max pooling and replace it with average pooling to obtain smoother results.
 #####Generator
 The generator network takes an unstylized image as input and produces a stylized output. The input is compressed as we downsample using strided convolutions. Then to return the result to the original size, fractionally strided convolutions are used. Using strided convolutions downsampling produces better results than using pooling operations. Residual connections are also used because the benefits they provide for training deep networks. Finally, we use instance normalization which leads to faster training.
 
@@ -71,13 +70,13 @@ The generator network takes an unstylized image as input and produces a stylized
 #Findings
 We did not need nearly as many iterations as the paper claimed to use. 20,000 iterations with a batch size of 1 yielded visually pleasing results. 
 #####
-The hyperparameters are extremely senstivive and have to be altered depending on the input styles. It appeared as if there was an error with the code because the results were terrible until the parameters were fine tuned. We found that different styles require significantly different weight ratios. 
+The hyperparameters are extremely sensitive and have to be altered depending on the input styles. The results were not visually appealing until the parameters were fine tuned. We found that different styles require significantly different weight ratios. 
 #####
-The total variance norm ended up being less effective than when using the gradient to directly update the pixels of the original image. It made the images look dull and didnt provide enough of a smoothing effect to be worthwhile.
+The total variance norm ended up being less effective than when using the gradient to directly update the pixels of the original image. It made the images look dull and didn't provide enough of a smoothing effect to be worthwhile.
 
 
 ##Data Requirements
-The following files must be downloaded on your machine and put the savedNets folder:
+The following files must be downloaded on your machine and put in the savedNets folder:
 #####
 Microsoft Coco dataset required for training  <a href="http://msvocds.blob.core.windows.net/coco2014/train2014.zip">Download Here</a><br>
 #####
